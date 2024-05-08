@@ -1,39 +1,283 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Logo]()
 
-Welcome,
+# Booking System For Golf Lessons
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Project Goals
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The goal of this project is to enable registered users to book golf lessons with a PGA qualified professional. Once the user has registered an account they will be able to create, read, uoadte and delete their booking at a state of the art driving range. The administrator of the booking site with also have full CRUD capibilities of the booking site.
 
-## Codeanywhere Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- [Booking System For Golf Lessons](#booking-system-for-golf-lessons)
+- [Project Goals](#project-goals)
+- [Table of Contents](#table-of-contents)
+- [UX](#ux)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Colours & ASCII Art](#colours--ascii-art)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features to be implemented](#features-to-be-implemented)
+- [Technologies used](#technologies-used)
+    - [Languages](#languages)
+    - [Tools & Libraries](#tools--libraries)
+- [Testing](#testing)
+    - [Code Validation](#code-validation)
+    - [Features Testing](#features-testing)
+    - [User Stories Testing](#user-stories-testing)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Bugs](#bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Fork](#fork)
+    - [Clone](#clone)
+- [Credits](#credits)
+- [Comments](#comments)
 
-`python3 -m http.server`
+## UX
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Design
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Colours 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
 
-Happy coding!
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Features
+
+## Existing Features
+
+### Home Page
+
+
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+
+  
+
+
+## Features to be Implemented
+
+
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Technologies used
+
+### Languages
+
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML") Included in CI Template.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JS") Included in CI Template.
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python")
+
+### Tools & Libraries
+
+* [Colorama](https://pypi.org/project/colorama/)
+* [Python Validator](https://pep8ci.herokuapp.com/)
+* [Heroku](https://dashboard.heroku.com/apps)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Testing
+
+### Code Validation
+
+    
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Features Testing
+
+- Home Page 
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    
+
+    
+
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+        
+### User Stories Testing
+
+- Table of User Story Testing.
+
+    | User Story | Testing |
+    | :--- | :--- | 
+    |As a user, ||
+    
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Browser Compatibility
+
+- Table of Browsers tested, as the project is terminal based mobile device testing was not applicable.
+
+  | Browser | Intented Appearance | Intented Responsiveness | 
+    | --------| ------------------- | ----------------------- |
+    | Chrome  |  |  | 
+    | Edge    |  |  | 
+    | Firefox |  |  |
+
+    <details><summary>Browser compatibility Screenshots</summary>
+
+    *Chrome*
+
+    ![Chrome]() 
+
+    *Edge*
+
+    ![Edge]()
+
+    *Firefox*
+
+    ![Firefox]()
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Bugs
+
+
+### Unfixed Bugs
+
+
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Deployment
+
+### Heroku
+
+The site was deployed using Heroku following the steps below:
+
+- Create a list of requirements using the following command in the terminal (pip3 freeze > requirements.txt).
+
+- Heroku searches for this exact file name as it builds the project. This file contains the list of the packages installed during project development which are called dependencies. We need Heroku to install these dependecies as well in order for the project to run. 
+
+- Activate your Heroku Student Pack account at the following link: [Heroku for Students]( https://www.heroku.com/github-students).
+
+- From Heroku Dashboard click on **Create New App**, enter name of app, choose your region and then click **Create App**.
+
+- Click on the **Settings** tab of the newly created app.
+
+- Go to **Config Vars** section and in the field for KEY enter **PORT**, in the VALUE field enter **8000** and then click **ADD**.
+
+- If your project uses a **creds.json** file you will need to set a config var by adding **CREDS** to KEY field and copying contents of creds.json file into **VALUE** field.
+
+- Go to Buildpacks section and click on **Add buildpack**.
+
+- Select **python** and click on **Save changes**.
+
+- Click on **Add buildpack** again, select **nodejs** and click on **Save changes**.
+
+- Make sure buildpacks are in order with python on top and nodejs underneath.
+
+- Click on **Deploy** tab at top of screen.
+
+- In **Deployment method** section selct **GitHub** and confirm by clicking **Connect to GitHub**.
+
+- Serach for your GitHub repository name, once found click **Connect**.
+
+- Scroll down on page and select either **Enable Automatic Deploys** which will rebuild your app every time you push a new change to GitHub or **Deploy Branch** which is a manual deployment so has to be selected after each change pushed to GitHub.
+
+- Once app is built you can click on **Open app** at top of page which will open app on new page where you can copy URL. 
+
+### Fork
+
+To make a copy of a repository or to fork it using Github follow below steps:
+
+- Go to **Github repository** to be copied.
+- Click on the **Fork** button in upper right corner of page to copy.
+
+### Clone
+
+To copy the repository to your local machine in Github follow steps below:
+
+- Go to **Github repository** to be cloned.
+- Click on the **Code** button above the list of files.
+- Select to clone using either  **HTTPS**, **SSH**, or **Github CLI** and click the **copy** button to copy the URL to clipboard.
+- Open **Git Bash**.
+- Change the current working directory to the one where you want the cloned directory.
+- Type **git clone** and paste the URL from the clipboard. 
+- Press **Enter** to create your local clone.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Credits
+
+For help and advice:
+
+- [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
+
+Code inspiration:
+
+- [LMS Django Walkthrough Project](https://codeinstitute.net "Developing with Django")
+
+
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
