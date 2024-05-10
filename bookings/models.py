@@ -9,8 +9,20 @@ class Booking(models.Model):
     duration = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Booking by {self.user}"
+
 class Comment(models.Model):
     booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name='comment')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     comment = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Comment by {self.user}"
