@@ -1,0 +1,10 @@
+
+
+.footer {
+    position: absolute;
+    font-size: 1.25rem;
+    bottom: 0;
+    width: 100%;
+    line-height: 3rem;
+  }
+

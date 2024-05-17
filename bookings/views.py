@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Booking
 
 # Create your views here.
-def my_bookings(request):
-    return HttpResponse("Welcome to your Booking page!")
+class BookingList(generic.ListView):
+    queryset = Booking.objects.all()
+    template_name = "bookings/index.html"
+    paginate_by = 6
