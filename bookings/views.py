@@ -10,7 +10,7 @@ def home_page(request):
 
 @login_required
 def bookings_list(request):
-    bookings = Booking.objects.all()
+    bookings = Booking.objects.filter(user=request.user)
     return render(request, 'bookings/booking_detail.html', {'object_list': bookings})
 
 
