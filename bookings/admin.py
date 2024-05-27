@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Booking, Comment
 from django_summernote.admin import SummernoteModelAdmin
+from allauth.socialaccount.models import SocialAccount, SocialApp, \
+    SocialToken
 
 
 @admin.register(Comment)
@@ -12,4 +14,8 @@ class CommentAdmin(SummernoteModelAdmin):
 
 # Register your models here.
 admin.site.register(Booking)
+
+admin.site.unregister(SocialAccount)
+admin.site.unregister(SocialApp)
+admin.site.unregister(SocialToken)
 
