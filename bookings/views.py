@@ -27,3 +27,26 @@ def create_booking(request):
         form = BookingForm()
     return render(request, 'bookings/booking_form.html', {'form': form})
 
+
+@login_required
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('bookings_list')  
+    return render(request, 'bookings/delete_booking.html', {'booking': booking})
+
+@login_required
+def update_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('bookings_list')  
+    else:
+        form = BookingForm(instance=booking)
+    return render(request, 'bookings/update_booking.html', {'form': form})
+
+
+
