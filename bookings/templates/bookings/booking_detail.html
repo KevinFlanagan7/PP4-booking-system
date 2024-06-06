@@ -1,26 +1,29 @@
 {% extends "base.html" %}
+
 {% load static %}
+
 {% load crispy_forms_tags %}
 
 {% block content %}
 
-<body>
-    <h1>Booking Detail Page</h1>
-    <p>Welcome {{ user.username }}! Here are your golf bookings buddy:</p>
-    <ol>
+<div class="container mt-5 text-center shadow-lg rounded">
+    <h1>My Bookings</h1>
+    <p class="mb-5">Welcome {{ user.username }}! Below is a list of your golf lesson bookings:</p>
+    <ul class="list-unstyled">
         {% for booking in object_list %}
-        <li>
+        <li class="mb-3">
             {{ booking.date }}, {{ booking.time }}, {{ booking.duration }}
-            <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mr-2">Delete</a>
             <a href="{% url 'update_booking' booking.id %}" class="btn btn-info">Update</a>
         </li>
         {% empty %}
         <li>No bookings available.</li>
         {% endfor %}
-    </ol>
+    </ul>
 
-    <a href="{% url 'create_booking' %}" class="btn btn-primary">Create a new booking</a>
+    <a href="{% url 'create_booking' %}" class="btn btn-success mt-5 mb-5">Create a new booking</a>
 
-</body>
+
+</div>
 
 {%endblock%}
