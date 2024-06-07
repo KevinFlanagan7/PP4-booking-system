@@ -34,7 +34,7 @@ def delete_booking(request, booking_id):
     if request.method == 'POST':
         booking.delete()
         return redirect('bookings_list')  
-    return render(request, 'bookings/delete_booking.html', {'booking': booking})
+    return redirect('bookings_list')
 
 @login_required
 def update_booking(request, booking_id):

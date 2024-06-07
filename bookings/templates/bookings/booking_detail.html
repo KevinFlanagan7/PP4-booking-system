@@ -13,7 +13,7 @@
         {% for booking in object_list %}
         <li class="mb-3">
             {{ booking.date }}, {{ booking.time }}, {{ booking.duration }}
-            <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mr-2">Delete</a>
+            <button class="btn btn-delete btn-danger" booking_id="{{ booking.id }}">Delete</button>
             <a href="{% url 'update_booking' booking.id %}" class="btn btn-info">Update</a>
         </li>
         {% empty %}
@@ -22,8 +22,32 @@
     </ul>
 
     <a href="{% url 'create_booking' %}" class="btn btn-success mt-5 mb-5">Create a new booking</a>
-
-
 </div>
 
-{%endblock%}
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete Booking?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to permantly delete your booking?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <form id="deleteForm" method="post" action="">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
