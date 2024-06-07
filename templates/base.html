@@ -12,13 +12,9 @@
     <title>Golf Lessons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Golf Lessons</title>
-
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -32,13 +28,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
 
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
 </head>
-
 
 <body class="d-flex flex-column h-100">
     <header>
@@ -87,12 +79,24 @@
         </nav>
     </header>
 
-    <main class="flex-shrink-0">
+    <!-- displaying Django messages -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show mt-3 p-3 bg-success text-white rounded" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
+    <main class="flex-shrink-0">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-
     </main>
 
     <!-- Footer -->
@@ -110,19 +114,16 @@
                     <a href="mailto:info@ssquare.com" target="_blank" rel="noopener noreferrer">info@golflessons.com</a>
                 </div>
                 <div class="col-md-4 text-center">
-                    <!-- Facebook -->
+                    <!-- Social Media Icons -->
                     <a href="https://facebook.com" target="_blank" rel="noopener"
                         aria-label="Visit our Facebook page (opens in a new tab)">
                         <i class="mr-4 fab fa-facebook-f"></i></a>
-                    <!-- Twitter -->
                     <a href="https://twitter.com" target="_blank" rel="noopener"
                         aria-label="Visit our Twitter page (opens in a new tab)">
                         <i class="mr-4 fab fa-twitter"></i></a>
-                    <!-- Linkedin -->
                     <a href="https://Linkedin.com" target="_blank" rel="noopener"
                         aria-label="Visit our Linkedin page (opens in a new tab)">
                         <i class="mr-4 fab fa-linkedin-in"></i></a>
-                    <!-- Instagram -->
                     <a href="https://instagram.com" target="_blank" rel="noopener"
                         aria-label="Visit our Instagram page (opens in a new tab)">
                         <i class="fab fa-instagram"></i></a>
@@ -137,17 +138,13 @@
         </div>
     </footer>
 
-    
-
     <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Custom script -->
     <script src="{% static 'js/script.js' %}"></script>
-
-
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from .models import Booking
 from .forms import BookingForm
 
@@ -33,6 +34,7 @@ def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     if request.method == 'POST':
         booking.delete()
+        messages.success(request, 'Booking has been deleted successfully.')
         return redirect('bookings_list')  
     return redirect('bookings_list')
 
