@@ -7,35 +7,36 @@
 {% block head_title %}{% trans "Sign up" %}{% endblock %}
 
 {% block content %}
-<div class="container mt-5 text-center shadow-lg rounded">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign Up" %}</h3>
 
-      <p>{% blocktrans %}
-        Welcome!
-        If you already have an account then please
-        <a class="link" href="{{ login_url }}">Log in</a>
-        instead.
-        {% endblocktrans %}
-      </p>
+  <div class="container mt-5 shadow-lg rounded">
+    <div class="row text-center">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <h3>{% trans "Sign Up" %}</h3>
+
+        <p>{% blocktrans %}
+          Welcome!
+          If you already have an account then please
+          <a class="link" href="{{ login_url }}">Sign in</a>
+          instead.
+          {% endblocktrans %}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <form class="signup text-left" id="signup_form" method="post" action="{% url 'account_signup' %}">
+          {% csrf_token %}
+          {{ form|crispy }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <div class="text-center">
+            <button class="btn btn-lg btn-success mb-5" type="submit">
+              {% trans "Sign Up" %}</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <form class="signup text-left" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        {% csrf_token %}
-        {{ form|crispy }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <div class="text-center">
-          <button class="btn btn-success mb-5" type="submit">
-            {% trans "Sign Up" %} &raquo;</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 
 {% endblock %}
