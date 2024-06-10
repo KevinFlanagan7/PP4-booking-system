@@ -23,6 +23,7 @@ def create_booking(request):
             booking = form.save(commit=False)
             booking.user = request.user  
             booking.save()
+            messages.success(request, 'Booking created successfully!')
             return redirect('bookings_list')  
     else:
         form = BookingForm()
@@ -45,6 +46,7 @@ def update_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Booking updated successfully!')
             return redirect('bookings_list')  
     else:
         form = BookingForm(instance=booking)
