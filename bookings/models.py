@@ -6,7 +6,6 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
     time = models.TimeField()
-    duration = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
