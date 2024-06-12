@@ -12,7 +12,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active center-block">
-            <img class="first-slide" src="{% static 'images/1st.jpg' %}" alt="first hole">
+            <img class="first-slide" src="{% static 'images/range.jpg' %}" alt="first hole">
             <div class="container">
                 <div class="carousel-caption d-inline">
                     <h1>Book a Lesson with us.</h1>
@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Option of Private Bay</h1>
-                    <p><a class="btn btn-lg btn-success" href="#gallery" role="button">Options</a></p>
+                    <p><a class="btn btn-lg btn-success" href="#options" role="button">Options</a></p>
                 </div>
             </div>
         </div>
@@ -53,85 +53,48 @@
     </a>
 </div>
 
-<!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+<!-- START THE FEATURETTES -->
 
-  <div class="container marketing">
+<hr class="featurette-divider">
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+<div class="container">
+    <div class="row featurette justify-content-center" id="options">
+        <div class="col-md-7 text-center">
+            <h2 class="featurette-heading">Private bay for your lesson.</h2>
+            <p class="lead">Enjoy the privacy of a private bay for your lesson with one of our quailified PGA professionals.</p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="{% static 'images/private_bay.webp' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Image of golf bay">
+        </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+    <div class="row featurette justify-content-center">
+        <div class="col-md-7 order-md-2 text-center">
+            <h2 class="featurette-heading">Own Personal Trackman Screen.</h2>
+            <p class="lead">Each bay at driving range has its own personel Trackman Screen to improve golf lesson experience.</p>
+        </div>
+        <div class="col-md-5 order-md-1 text-center">
+          <img src="{% static 'images/trackman.webp' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Image of golf bay with trackman">
+        </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+    <div class="row featurette justify-content-center" id="location">
+        <div class="col-md-7 text-center">
+            <h2 class="featurette-heading">Located in the <span class="text-muted">Heart</span> of the country.</h2>
+            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        </div>
+        <div class="col-md-5 text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152483.55023443588!2d-8.368972615381958!3d53.33331215239628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c49f72522ce6f%3A0x34a0296ec74de5c5!2sGolf%20Academy%20Athlone!5e0!3m2!1sen!2sie!4v1718191173878!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 
     <hr class="featurette-divider">
+</div><!-- /.container -->
 
-    <!-- /END THE FEATURETTES -->
+<!-- /END THE FEATURETTES -->
 
-  </div><!-- /.container -->
-
-
-<!-- index.html content ends here -->
 {% endblock %}

@@ -20,9 +20,14 @@ TIME_CHOICES = generate_time_slots(time(9, 0), time(17, 0), timedelta(hours=1))
 
 class BookingForm(forms.ModelForm):
     date = forms.DateField(
+        label="Select Date",
         widget=forms.DateInput(attrs={'type': 'date'})
     )
-    time = forms.ChoiceField(choices=TIME_CHOICES)
+    time = forms.ChoiceField(
+        label="Select Time",
+        choices=TIME_CHOICES
+    )
+    
 
     class Meta:
         model = Booking
