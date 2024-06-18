@@ -12,33 +12,34 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active center-block">
-            <img class="first-slide" src="{% static 'images/range.jpg' %}" alt="first hole">
+            <img class="first-slide" src="{% static 'images/range3.jpg' %}" alt="first hole">
             <div class="container">
                 <div class="carousel-caption d-inline">
-                    <h1>Book a Lesson with us.</h1>
+                    
                     {% if request.user.is_authenticated %}
-                    <p><a class="btn btn-lg btn-success" href="{% url 'bookings_list' %}" role="button">My Bookings</a></p>
+                    <p><a class="btn btn-lg btn-success" href="{% url 'bookings_list' %}" role="button">My Bookings</a>
+                    </p>
                     {% else %}
-                    <p><a class="btn btn-lg btn-success" href="{% url 'account_login' %}" role="button">Sign in</a></p>
+                    <p><a class="btn btn-lg btn-brown" href="{% url 'account_login' %}" role="button">Sign in</a></p>
                     {% endif %}
                 </div>
             </div>
         </div>
         <div class="carousel-item center-block">
-            <img class="second-slide" src="{% static 'images/3rd.jpg' %}" alt="3rd hole">
+            <img class="second-slide" src="{% static 'images/range1.jpg' %}" alt="3rd hole">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Option of Private Bay</h1>
-                    <p><a class="btn btn-lg btn-success" href="#options" role="button">Options</a></p>
+                    
+                    <p><a class="btn btn-lg btn-brown" href="#options" role="button">Options</a></p>
                 </div>
             </div>
         </div>
         <div class="carousel-item center-block">
-            <img class="third-slide" src="{% static 'images/5th.jpg' %}" alt="5th hole">
+            <img class="third-slide" src="{% static 'images/range.jpg' %}" alt="5th hole">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Located in the Heart of the Country</h1>
-                    <p><a class="btn btn-lg btn-success" href="#location" role="button">Location</a></p>
+                    
+                    <p><a class="btn btn-lg btn-brown" href="#location" role="button">Location</a></p>
                 </div>
             </div>
         </div>
@@ -55,16 +56,20 @@
 
 <!-- START THE FEATURETTES -->
 
-<hr class="featurette-divider">
-
 <div class="container">
-    <div class="row featurette justify-content-center" id="options">
+
+    <hr class="featurette-divider" id="options">
+
+    <div class="row featurette justify-content-center">
         <div class="col-md-7 text-center">
             <h2 class="featurette-heading">Private bay for your lesson.</h2>
-            <p class="lead">Enjoy the privacy of a private bay for your lesson with one of our quailified PGA professionals.</p>
+            <p class="lead">Enjoy the privacy of a private bay for your lesson with one of our quailified PGA
+                professionals.</p>
         </div>
         <div class="col-md-5 text-center">
-          <img src="{% static 'images/private_bay.webp' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Image of golf bay">
+            <img src="{% static 'images/private_bay.webp' %}"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" alt="Image of golf bay">
         </div>
     </div>
 
@@ -73,26 +78,37 @@
     <div class="row featurette justify-content-center">
         <div class="col-md-7 order-md-2 text-center">
             <h2 class="featurette-heading">Own Personal Trackman Screen.</h2>
-            <p class="lead">Each bay at driving range has its own personel Trackman Screen to improve golf lesson experience.</p>
+            <p class="lead">Each bay at driving range has its own personel Trackman Screen to improve golf lesson
+                experience.</p>
         </div>
         <div class="col-md-5 order-md-1 text-center">
-          <img src="{% static 'images/trackman.webp' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Image of golf bay with trackman">
+            <img src="{% static 'images/trackman.webp' %}"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" alt="Image of golf bay with trackman">
         </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="location">
 
-    <div class="row featurette justify-content-center" id="location">
+    <div class="row featurette justify-content-center">
         <div class="col-md-7 text-center">
             <h2 class="featurette-heading">Located in the <span class="text-muted">Heart</span> of the country.</h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                intended to be actually read, simply here to give you a better view of what this would look like with
+                some actual content. Your content.</p>
         </div>
         <div class="col-md-5 text-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152483.55023443588!2d-8.368972615381958!3d53.33331215239628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c49f72522ce6f%3A0x34a0296ec74de5c5!2sGolf%20Academy%20Athlone!5e0!3m2!1sen!2sie!4v1718191173878!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152483.55023443588!2d-8.368972615381958!3d53.33331215239628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c49f72522ce6f%3A0x34a0296ec74de5c5!2sGolf%20Academy%20Athlone!5e0!3m2!1sen!2sie!4v1718191173878!5m2!1sen!2sie"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
     <hr class="featurette-divider">
+
+    <p class="text-center"><a href="#">Back to top</a></p>
+
 </div><!-- /.container -->
 
 <!-- /END THE FEATURETTES -->
