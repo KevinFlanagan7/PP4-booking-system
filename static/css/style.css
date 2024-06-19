@@ -8,7 +8,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   color: #5a5a5a;
 }
 
@@ -22,6 +22,10 @@ main {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.featurette-iframe {
+  height: 22.5rem;
 }
 
 /* CUSTOMIZE THE CAROUSEL
