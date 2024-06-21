@@ -10,7 +10,7 @@
     <h1>My Bookings</h1>
     <p class="mb-5">Welcome {{ user.username }}! Below is a list of your golf lesson bookings:</p>
     <ul class="list-unstyled">
-        {% for booking in object_list %}
+        {% for booking in bookings_list %}
         <li class="mb-3">
             {{ booking.date }}, {{ booking.time }}
             <button class="btn btn-delete btn-danger" booking_id="{{ booking.id }}">Delete</button>

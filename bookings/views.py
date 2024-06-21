@@ -12,7 +12,7 @@ def home_page(request):
 @login_required
 def bookings_list(request):
     bookings = Booking.objects.filter(user=request.user)
-    return render(request, 'bookings/booking_detail.html', {'object_list': bookings})
+    return render(request, 'bookings/list.html', {'bookings_list': bookings})
 
 
 @login_required
@@ -27,7 +27,7 @@ def create_booking(request):
             return redirect('bookings_list')  
     else:
         form = BookingForm()
-    return render(request, 'bookings/booking_form.html', {'form': form})
+    return render(request, 'bookings/form.html', {'form': form, 'form_type': 'create'})
 
 
 @login_required
@@ -50,7 +50,7 @@ def update_booking(request, booking_id):
             return redirect('bookings_list')  
     else:
         form = BookingForm(instance=booking)
-    return render(request, 'bookings/update_booking.html', {'form': form})
+    return render(request, 'bookings/form.html', {'form': form, 'form_type': 'update'})
 
 
 
