@@ -10,7 +10,7 @@ def generate_time_slots(start_time, end_time, interval):
     end_time = datetime.combine(datetime.today(), end_time)
     while current_time <= end_time:
         if current_time.time() != time(13, 0):  
-            slots.append((current_time.time(), current_time.strftime("%I:%M %p")))
+            slots.append((current_time.time(), current_time.strftime("%H:%M")))
         current_time += interval
     return slots
 

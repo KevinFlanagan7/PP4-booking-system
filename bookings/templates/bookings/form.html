@@ -15,9 +15,9 @@
         {{ form|crispy }}
         <div class="text-center">
             {% if form_type == 'create' %}
-                <button type="submit" class="btn btn-success btn-lg mt-5 mb-5">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg mt-5 mb-5">Submit</button>
             {% elif form_type == 'update' %}
-                <button type="submit" class="btn btn-success btn-lg mt-5 mb-5">Update</button>
+                <button type="submit" class="btn btn-warning btn-lg mt-5 mb-5">Update</button>
             {% endif %}
         </div>
     </form>
