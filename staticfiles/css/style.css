@@ -17,6 +17,11 @@ main {
   flex: 1;
 }
 
+.logo-image {
+  height: 2.5rem; 
+  margin-left: 0.5rem; 
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 .carousel {
@@ -62,11 +67,12 @@ main {
 
 /* Footer Styles */
 .footer {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   bottom: 0;
   width: 100%;
   line-height: 3rem;
 }
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
