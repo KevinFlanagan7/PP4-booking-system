@@ -17,6 +17,11 @@ main {
   flex: 1;
 }
 
+.logo-image {
+  height: 2.5rem; 
+  margin-left: 0.5rem; 
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 .carousel {
@@ -65,7 +70,7 @@ main {
   font-size: 1.25rem;
   bottom: 0;
   width: 100%;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 /* RESPONSIVE CSS
