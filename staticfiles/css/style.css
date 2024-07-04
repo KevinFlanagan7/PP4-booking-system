@@ -18,8 +18,8 @@ main {
 }
 
 .logo-image {
-  height: 2.5rem; 
-  margin-left: 0.5rem; 
+  height: 2.5rem;
+  margin-left: 0.5rem;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -67,7 +67,7 @@ main {
 
 /* Footer Styles */
 .footer {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   bottom: 0;
   width: 100%;
   line-height: 3rem;
@@ -102,6 +102,10 @@ main {
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+  
+  .footer {
+    font-size: 1.5rem;
   }
 }
 
