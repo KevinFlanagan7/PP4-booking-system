@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% if is_update %}Booking Update Confirmation{% else %}Booking Confirmation{% endif %}</title>
+</head>
+
+<body>
+    <h1>{% if is_update %}Booking Update Confirmation{% else %}Booking Confirmation{% endif %}</h1>
+    <p>Dear {{ user.username }},</p>
+    <p>
+        {% if is_update %}
+        Your booking has been updated successfully. Below are the updated details of your golf lesson:
+        {% else %}
+        Thank you for booking your golf lesson with us. Below are the details of your booking:
+        {% endif %}
+    </p>
+    <ul>
+        <li>Date: {{ booking.date }}</li>
+        <li>Time: {{ booking.time|time:"H:i" }}</li>
+    </ul>
+    <p>We look forward to seeing you!</p>
+</body>
+
+</html>

@@ -2,8 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import timezone 
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.template.loader import render_to_string
+from django.core.mail import send_mail
+from django.conf import settings
 from .models import Booking
 from .forms import BookingForm
+from allauth.account.utils import user_email
 
 def home_page(request):
 
@@ -25,7 +29,20 @@ def create_booking(request):
             booking = form.save(commit=False)
             booking.user = request.user  
             booking.save()
-            messages.success(request, 'Booking created successfully!')
+
+            # Send booking confirmation email using Allauth's email system
+            subject = 'Booking Confirmation'
+            email_context = {
+                'user': request.user,
+                'booking': booking,
+                'is_update': False
+            }
+            message = render_to_string('bookings/email_confirmation.html', email_context)
+            from_email = settings.EMAIL_HOST_USER
+            recipient_list = [request.user.email]
+            send_mail(subject, '', from_email, recipient_list, html_message=message)
+
+            messages.success(request, 'Booking created successfully! Confirmation email sent!')
             return redirect('bookings_list')  
     else:
         form = BookingForm()
@@ -48,7 +65,20 @@ def update_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Booking updated successfully!')
+
+            # Send booking update confirmation email using Allauth's email system
+            subject = 'Booking Updated'
+            email_context = {
+                'user': request.user,
+                'booking': booking,
+                'is_update': True
+            }
+            message = render_to_string('bookings/email_confirmation.html', email_context)
+            from_email = settings.EMAIL_HOST_USER
+            recipient_list = [request.user.email]
+            send_mail(subject, '', from_email, recipient_list, html_message=message)
+
+            messages.success(request, 'Booking updated successfully! Confirmation email sent!')
             return redirect('bookings_list')  
     else:
         form = BookingForm(instance=booking)
