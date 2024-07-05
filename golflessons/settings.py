@@ -20,7 +20,6 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -32,9 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -110,7 +107,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -132,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Allauth settings
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = True  # Assuming you want email-only signup
+ACCOUNT_USERNAME_REQUIRED = True  
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 
 # Email configuration
@@ -153,7 +149,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

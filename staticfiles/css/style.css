@@ -66,13 +66,17 @@ main {
 }
 
 /* Footer Styles */
-.footer {
-  font-size: 1.2rem;
-  bottom: 0;
-  width: 100%;
-  line-height: 3rem;
+.social-icon {
+  font-size: 1.2rem;  
 }
 
+.fa-twitter {
+  margin: 0 1.6rem;
+}
+
+.copyright-text {
+  font-size: 0.8rem; 
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -104,9 +108,18 @@ main {
     height: auto;
   }
   
-  .footer {
-    font-size: 1.5rem;
+  .social-icon {
+    font-size: 1.5rem;  
   }
+  
+  .fa-twitter {
+    margin: 0 5rem;
+  }
+  
+  .copyright-text {
+    font-size: 0.9rem; 
+  }
+  
 }
 
 @media (min-width: 992px) {
