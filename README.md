@@ -14,7 +14,11 @@ The goal of this project is to enable registered users to book golf lessons with
 - [UX](#ux)
   - [User Stories](#user-stories)
   - [Design](#design)
-    - [Colours & ASCII Art](#colours--ascii-art)
+    - [Colours](#colours)
+- [Wireframes](#wireframes)
+    - [Mobile Wireframes](#mobile-wireframes)
+    - [Tablet Wireframes](#tablet-wireframes)
+    - [Desktop Wireframes](#desktop-wireframes)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features to be implemented](#features-to-be-implemented)
@@ -58,7 +62,71 @@ The goal of this project is to enable registered users to book golf lessons with
 
 ### Colours 
 
+## Wireframes
 
+- I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The pages include the home page, the Sign up, Sign in and My Bookings pages.
+The wireframes are below:
+
+   - Mobile Wireframes
+
+        <details><summary>Screen shots</summary>
+
+        *Home Page*
+
+        ![Home](/documentation/mobile-home.png)
+
+        *Sign up page*
+
+        ![Sign up](/documentation/)
+
+        *Sign in page*
+
+        ![Sign in](/documentation/)
+
+        *Bookings page*
+
+        ![Bookings](/documentation/)
+
+
+    - Tablet Wireframes
+
+        <details><summary>Screen shots</summary>
+
+        *Home Page*
+
+        ![Home](/documentation/)
+
+        *Sign up page*
+
+        ![Sign up](/documentation/)
+
+        *Sign in page*
+
+        ![Sign in](/documentation/)
+
+        *Bookings page*
+
+        ![Bookings](/documentation/)
+
+    - Tablet Wireframes
+
+        <details><summary>Screen shots</summary>
+
+        *Home Page*
+
+        ![Home](/documentation/)
+
+        *Sign up page*
+
+        ![Sign up](/documentation/)
+
+        *Sign in page*
+
+        ![Sign in](/documentation/)
+
+        *Bookings page*
+
+        ![Bookings](/documentation/)
 
 
 \
