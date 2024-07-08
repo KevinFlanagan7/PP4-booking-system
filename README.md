@@ -64,69 +64,62 @@ The goal of this project is to enable registered users to book golf lessons with
 
 ## Wireframes
 
-- I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The pages include the home page, the Sign up, Sign in and My Bookings pages.
+- I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The pages include the home page, Sign up, Sign in, create and the My Bookings pages.
 The wireframes are below:
 
-   - Mobile Wireframes
-
-        <details><summary>Screen shots</summary>
+    - Mobile Wireframes
+        <details><summary>Mobile Screenshots</summary>
 
         *Home Page*
-
         ![Home](/documentation/mobile-home.png)
 
         *Sign up page*
-
-        ![Sign up](/documentation/)
+        ![Sign up](/documentation/mobile-signup.png)
 
         *Sign in page*
+        ![Sign in](/documentation/mobile-signin.png)
 
-        ![Sign in](/documentation/)
+        *Create booking page*
+        ![Create](/documentation/mobile-create.png)
 
         *Bookings page*
-
-        ![Bookings](/documentation/)
-
+        ![Bookings](/documentation/mobile-bookings.png)
 
     - Tablet Wireframes
-
-        <details><summary>Screen shots</summary>
-
-        *Home Page*
-
-        ![Home](/documentation/)
-
-        *Sign up page*
-
-        ![Sign up](/documentation/)
-
-        *Sign in page*
-
-        ![Sign in](/documentation/)
-
-        *Bookings page*
-
-        ![Bookings](/documentation/)
-
-    - Tablet Wireframes
-
-        <details><summary>Screen shots</summary>
+        <details><summary>Tablet Screenshots</summary>
 
         *Home Page*
-
-        ![Home](/documentation/)
+        ![Home](/documentation/tablet-home.png)
 
         *Sign up page*
-
-        ![Sign up](/documentation/)
+        ![Sign up](/documentation/tablet-signup.png)
 
         *Sign in page*
+        ![Sign in](/documentation/tablet-signin.png)
 
-        ![Sign in](/documentation/)
+        *Create booking page*
+        ![Create](/documentation/tablet-create.png)
 
         *Bookings page*
+        ![Bookings](/documentation/tablet-bookings.png)
 
-        ![Bookings](/documentation/)
+    - Desktop Wireframes
+        <details><summary>Desktop Screenshots</summary>
+
+        *Home Page*
+        ![Home](/documentation/desktop-home.png)
+
+        *Sign up page*
+        ![Sign up](/documentation/desktop-signup.png)
+
+        *Sign in page*
+        ![Sign in](/documentation/desktop-signin.png)
+
+        *Create booking page*
+        ![Create](/documentation/desktop-create.png)
+
+        *Bookings page*
+        ![Bookings](/documentation/desktop-bookings.png)
 
 
 \
