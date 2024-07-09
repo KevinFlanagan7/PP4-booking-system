@@ -1,14 +1,14 @@
-![Logo]()
+![Logo](/static/images/logo.jpg)
 
-# Booking System For Golf Lessons
+# Golf Academy
 
 ## Project Goals
 
-The goal of this project is to enable registered users to book golf lessons with a PGA qualified professional. Once the user has registered an account they will be able to create, read, uoadte and delete their booking at a state of the art driving range. The administrator of the booking site with also have full CRUD capibilities of the booking site.
+The goal of this project is to enable registered users to book golf lessons with a PGA qualified professional at a Golf Academy. Once the user has registered an account they will be able to create, read, update and delete their booking at a state of the art driving range. The administrator of the booking site with also have full CRUD capibilities of the booking site.
 
 ## Table of Contents
 
-- [Booking System For Golf Lessons](#booking-system-for-golf-lessons)
+- [Golf Academy](#golf-academy)
 - [Project Goals](#project-goals)
 - [Table of Contents](#table-of-contents)
 - [UX](#ux)
@@ -16,6 +16,7 @@ The goal of this project is to enable registered users to book golf lessons with
 - [Design](#design)
     - [Colours](#colours)
     - [Fonts](#fonts)
+    - [Icons](#icons)
     - [Structure](#structure)
     - [Wireframes](#wireframes)
     - [Database Schema](#database-schema)
@@ -81,6 +82,10 @@ I have used the default font families provided by Bootstrap for different device
 
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+### Icons
+
+I have used the [Font Awesome library](https://fontawesome.com/ "Font Awesome") for the social media icons in the footer and a [Favicon generator](https://favicon.io/ "Favicon") for the browser tab icon.
+
 
 ### Structure
 
@@ -106,21 +111,28 @@ I have built the website with a mobile first mindset using the iphone 6 (375px) 
 The wireframes are below:
 
     - **Mobile Wireframes**
+
         <details><summary>Mobile Screenshots</summary>
 
         **Home Page**
+
         ![Home](/documentation/mobile-home.png)
 
         **Sign up page**
+
+
         ![Sign up](/documentation/mobile-signup.png)
 
         **Sign in page**
+
         ![Sign in](/documentation/mobile-signin.png)
 
         **Create booking page**
+
         ![Create](/documentation/mobile-create.png)
 
         **Bookings page**
+        
         ![Bookings](/documentation/mobile-bookings.png)
 
     - **Tablet Wireframes**
