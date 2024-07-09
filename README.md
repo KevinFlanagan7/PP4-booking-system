@@ -1,4 +1,4 @@
-![Logo](/static/images/logo.jpg)
+![Logo](/documentation/readme-logo.jpg)
 
 # Golf Academy
 
@@ -208,12 +208,12 @@ The wireframes are below:
 
 - The booking model stores the details of the booking and includes the fields below:
     - id: Integer, primary key. A unique identifier for each booking.
-    - user_id: Integer, foreign key references User(id). The ID of the user who made the booking.
+    - user_id: Integer, foreign key references the ID of the user who made the booking.
     - date: The date of the booking.
     - time: The time of the booking.
     - created_on: The timestamp when the booking was created.
 
-The relationship between user and booking is one-to-many. Each user can have multiple bookings, with the user_id in the booking table referencing the id in the user table.
+The relationship between the user and bookings is one-to-many. Each user can have multiple bookings, with the user_id in the booking table referencing the id in the user table.
 
 \
 &nbsp;
