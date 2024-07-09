@@ -13,12 +13,16 @@ The goal of this project is to enable registered users to book golf lessons with
 - [Table of Contents](#table-of-contents)
 - [UX](#ux)
   - [User Stories](#user-stories)
-  - [Design](#design)
+- [Design](#design)
     - [Colours](#colours)
-- [Wireframes](#wireframes)
-    - [Mobile Wireframes](#mobile-wireframes)
-    - [Tablet Wireframes](#tablet-wireframes)
-    - [Desktop Wireframes](#desktop-wireframes)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+    - [Wireframes](#wireframes)
+    - [Database Schema](#database-schema)
+    - [Agile Methodology](#agile-methodology)
+        - [Overview](#overview)
+        - [Epics](#epics)
+        - [MoSCoW](#moscow)  
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features to be implemented](#features-to-be-implemented)
@@ -52,7 +56,18 @@ The goal of this project is to enable registered users to book golf lessons with
 
 ## Design
 
+### Colours 
 
+![Coolors](/documentation/coolors.png)
+
+I used the colours above provided by the bootstrap classes listed below:
+
+- Black: bg-dark, used in navigation bar and footer for good text contrast.
+- Green: bg-success, used for messages to indicate successful actions like updating a booking etc.
+- Red: btn-danger, used for delete and sign out to highlight a warning.
+- Orange: btn.warning, used for update button which indicates a warning to the user that data can be changed. 
+- White: bg-light, used for background for body of website for good text contrast.
+- Blue: btn-primary, highlights primary actions like sign in, create and submit.
 
 \
 &nbsp;
@@ -60,66 +75,101 @@ The goal of this project is to enable registered users to book golf lessons with
 \
 &nbsp;
 
-### Colours 
+### Fonts
 
-## Wireframes
+I have used the default font families provided by Bootstrap for different devices and browsers. This ensures optimal readability and a consistent look. Below is a list of the default fonts depending on the device and browser used: 
 
-- I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The pages include the home page, Sign up, Sign in, create and the My Bookings pages.
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+### Structure
+
+I have built the website with a mobile first mindset using the iphone 6 (375px) as the smallest screen size for styling to look good on. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/).
+
+| Screen Size | Breakpoint |
+| ----------- | ---------- |
+| x-small     | <576px     |
+| small       | => 576px   |
+| medium      | => 768px   |
+| large       | => 992px   |
+| x-large     | => 1200px  |
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Wireframes
+
+- I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The pages include the home page, Sign up, Sign in, Create and the My Bookings pages.
 The wireframes are below:
 
-    - Mobile Wireframes
+    - **Mobile Wireframes**
         <details><summary>Mobile Screenshots</summary>
 
-        *Home Page*
+        **Home Page**
         ![Home](/documentation/mobile-home.png)
 
-        *Sign up page*
+        **Sign up page**
         ![Sign up](/documentation/mobile-signup.png)
 
-        *Sign in page*
+        **Sign in page**
         ![Sign in](/documentation/mobile-signin.png)
 
-        *Create booking page*
+        **Create booking page**
         ![Create](/documentation/mobile-create.png)
 
-        *Bookings page*
+        **Bookings page**
         ![Bookings](/documentation/mobile-bookings.png)
 
-    - Tablet Wireframes
+    - **Tablet Wireframes**
         <details><summary>Tablet Screenshots</summary>
 
-        *Home Page*
+        **Home Page**
         ![Home](/documentation/tablet-home.png)
 
-        *Sign up page*
+        **Sign up page**
         ![Sign up](/documentation/tablet-signup.png)
 
-        *Sign in page*
+        **Sign in page**
         ![Sign in](/documentation/tablet-signin.png)
 
-        *Create booking page*
+        **Create booking page**
         ![Create](/documentation/tablet-create.png)
 
-        *Bookings page*
+        **Bookings page**
         ![Bookings](/documentation/tablet-bookings.png)
 
-    - Desktop Wireframes
+    - **Desktop Wireframes**
         <details><summary>Desktop Screenshots</summary>
 
-        *Home Page*
+        **Home Page**
         ![Home](/documentation/desktop-home.png)
 
-        *Sign up page*
+        **Sign up page**
         ![Sign up](/documentation/desktop-signup.png)
 
-        *Sign in page*
+        **Sign in page**
         ![Sign in](/documentation/desktop-signin.png)
 
-        *Create booking page*
+        **Create booking page**
         ![Create](/documentation/desktop-create.png)
 
-        *Bookings page*
+        **Bookings page**
         ![Bookings](/documentation/desktop-bookings.png)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Database Schema
+
+![Database schema](/documentation/database.png)
+
+### Agile Methodology
 
 
 \
