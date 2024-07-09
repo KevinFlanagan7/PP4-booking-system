@@ -20,6 +20,8 @@ The goal of this project is to enable registered users to book golf lessons with
     - [Structure](#structure)
     - [Wireframes](#wireframes)
     - [Database Schema](#database-schema)
+        - [User Model](#user-model)
+        - [Booking Model](#booking-model)
     - [Agile Methodology](#agile-methodology)
         - [Overview](#overview)
         - [Epics](#epics)
@@ -132,43 +134,55 @@ The wireframes are below:
         ![Create](/documentation/mobile-create.png)
 
         **Bookings page**
-        
+
         ![Bookings](/documentation/mobile-bookings.png)
 
     - **Tablet Wireframes**
+
         <details><summary>Tablet Screenshots</summary>
 
         **Home Page**
+
         ![Home](/documentation/tablet-home.png)
 
         **Sign up page**
+
         ![Sign up](/documentation/tablet-signup.png)
 
         **Sign in page**
+
         ![Sign in](/documentation/tablet-signin.png)
 
         **Create booking page**
+
         ![Create](/documentation/tablet-create.png)
 
         **Bookings page**
+
         ![Bookings](/documentation/tablet-bookings.png)
 
     - **Desktop Wireframes**
+
         <details><summary>Desktop Screenshots</summary>
 
         **Home Page**
+
         ![Home](/documentation/desktop-home.png)
 
         **Sign up page**
+
         ![Sign up](/documentation/desktop-signup.png)
 
         **Sign in page**
+
         ![Sign in](/documentation/desktop-signin.png)
 
         **Create booking page**
+
         ![Create](/documentation/desktop-create.png)
 
         **Bookings page**
+
         ![Bookings](/documentation/desktop-bookings.png)
 
 \
@@ -180,6 +194,33 @@ The wireframes are below:
 ### Database Schema
 
 ![Database schema](/documentation/database.png)
+
+#### User Model
+
+- The built in Django user model above includes the below key fields:
+    - id: Integer, primary key. A unique identifier for each user.
+    - username: Varchar. The username chosen by the user (optional, configurable).
+    - email: Varchar, unique. The user's email address, which must be unique.
+    - password: Varchar. The user's password, stored in a hashed format. 
+    - Django Allauth extends this model to handle user registration and authentication.
+
+#### Booking Model
+
+- The booking model stores the details of the booking and includes the fields below:
+    - id: Integer, primary key. A unique identifier for each booking.
+    - user_id: Integer, foreign key references User(id). The ID of the user who made the booking.
+    - date: The date of the booking.
+    - time: The time of the booking.
+    - created_on: The timestamp when the booking was created.
+
+The relationship between user and booking is one-to-many. Each user can have multiple bookings, with the user_id in the booking table referencing the id in the user table.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+    
 
 ### Agile Methodology
 
