@@ -24,8 +24,8 @@ The goal of this project is to enable registered users to book golf lessons with
         - [Booking Model](#booking-model)
     - [Agile Methodology](#agile-methodology)
         - [Overview](#overview)
-        - [Epics](#epics)
-        - [MoSCoW](#moscow)  
+        - [Epics & Milestones](#epics--milestones)
+        - [Github Project](#github-project)  
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features to be implemented](#features-to-be-implemented)
@@ -50,6 +50,21 @@ The goal of this project is to enable registered users to book golf lessons with
 
 ## User Stories
 
+-  As a user, I want to be able to easily navigate through the website on all devices.
+
+- As a user, I want to easily access information to learn about the golf academy and its offerings.
+
+- As a user, I want to find the location on a map so I can easily plan my visit.
+
+- As a user, I want to easily register an account with the golf academy.
+
+- As a user, I want to sign into my account to create, read, update and delete bookings.
+
+- As a user, I want clear notification messages when I complete an action successfully.
+
+- As a user, I want to clearly know when I'm signed into and out of my account.
+
+- As a user, I want to receive email confirmation when I make or update a booking.
 
 \
 &nbsp;
@@ -221,9 +236,39 @@ The relationship between the user and bookings is one-to-many. Each user can hav
 \
 &nbsp;
     
-
 ### Agile Methodology
 
+#### Overview
+
+I used Agile methodology to plan my project. It allowed me to break down the project into manageable clear tasks. It made it easier to prioritize tasks, to track progress and to maintain momentum during development. 
+
+#### Epics & Milestones
+
+My project is made up of six Epics which are large bodies of work that can be broken down into smaller, more manageable user stories. They provide an overview of the main functionalities to deliver, there are five milestones associated to the projects Epics. For my project, the Milestones with associated Epics and user stories can be viewed at the links below:
+
+- [Milestone 1 - Initial Set Up](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/1)
+
+- [Milestone 2 - Home page creation](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/2)
+
+- [Milestone 3 - Registered user CRUD functionality for Bookings](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/3)
+
+- [Milestone 4 - Implement and Enhance Website Styling](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/4)
+
+- [Milestone 5 - Email confirmation](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/5)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+#### Github Project
+
+The Github projects tool was used to implement Agile development practices efficiently. By using Kanban boards, tasks were visually managed and tracked through various stages of completion. The MoSCoW (Must have, Should have, Could have & Won't have) method was used to prioritize features and tasks, view below links to the project's Kanban board and MoSCoW prioritization method:
+
+- [Kanban board](https://github.com/users/KevinFlanagan7/projects/5/views/1)
+
+- [MoSCoW Prioritization](https://github.com/KevinFlanagan7/PP4-booking-system/issues?q=is%3Aissue+is%3Aclosed)
 
 \
 &nbsp;
@@ -237,20 +282,13 @@ The relationship between the user and bookings is one-to-many. Each user can hav
 
 ### Home Page
 
-
-
 \
 &nbsp;
 [Back to Top](#table-of-contents)
 \
 &nbsp;
 
-
-  
-
-
 ## Features to be Implemented
-
 
 
 \
