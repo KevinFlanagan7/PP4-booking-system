@@ -15,7 +15,6 @@ function initMap() {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const deleteModalElement = document.getElementById("deleteModal");
     const deleteButtons = document.querySelectorAll(".btn-delete");

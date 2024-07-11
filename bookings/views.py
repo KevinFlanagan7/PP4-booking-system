@@ -10,8 +10,11 @@ from .forms import BookingForm
 from allauth.account.utils import user_email
 
 def home_page(request):
+    context = {
+        'google_maps_api_key': settings.GOOGLE_MAPS_API_KEY,
+    }
 
-    return render(request, 'bookings/index.html')
+    return render(request, 'bookings/index.html', context)
     
 
 @login_required
