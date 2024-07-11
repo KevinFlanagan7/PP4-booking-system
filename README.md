@@ -240,7 +240,7 @@ The relationship between the user and bookings is one-to-many. Each user can hav
 
 #### Overview
 
-I used Agile methodology to plan my project. It allowed me to break down the project into manageable clear tasks. It made it easier to prioritize tasks, to track progress and to maintain momentum during development. 
+I used Agile methodology to plan my project. It allowed me to break down the project into smaller manageable clear tasks. It made it easier to prioritize tasks, to track progress and to maintain momentum during development. 
 
 #### Epics & Milestones
 
