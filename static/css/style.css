@@ -59,7 +59,7 @@ main {
   letter-spacing: -.05rem;
 }
 
-#map {
+iframe {
   width: 100%;
   height: 22.5rem;
 }
