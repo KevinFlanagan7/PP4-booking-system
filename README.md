@@ -28,10 +28,20 @@ The goal of this project is to enable registered users to book golf lessons with
         - [Github Project](#github-project)  
 - [Features](#features)
     - [Existing Features](#existing-features)
+        - [Home](#home)
+        - [Sign Up](#sign-up)
+        - [Sign In](#sign-in)
+        - [My Bookings](#my-bookings)
+        - [Create](#sign-in)
+        - [Delete Modal](#delete-modal)
+        - [Update](#update)
+        - [Sign Out](#sign-out)
     - [Features to be implemented](#features-to-be-implemented)
 - [Technologies used](#technologies-used)
     - [Languages](#languages)
-    - [Tools & Libraries](#tools--libraries)
+    - [Fameworks](#frameworks)
+    - [Database](#database)
+    - [Tools](#tools)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
     - [Features Testing](#features-testing)
@@ -101,7 +111,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica N
 
 ### Icons
 
-I have used the [Font Awesome library](https://fontawesome.com/ "Font Awesome") for the social media icons in the footer and a [Favicon generator](https://favicon.io/ "Favicon") for the browser tab icon.
+I have used the [Font Awesome library](https://fontawesome.com/ "Font Awesome") for the social media icons in the footer and a [Favicon generator](https://favicon.io/favicon-converter/ "Favicon") for the browser tab icon.
 
 
 ### Structure
@@ -280,7 +290,81 @@ The Github projects tool was used to implement Agile development practices effic
 
 ## Existing Features
 
-### Home Page
+### Home
+
+The home page is made up of three sections
+
+- Navagation...
+
+    <details><summary>Screenshots</summary>
+
+- Landing page..
+
+    <details><summary>Screenshots</summary>
+
+- Footer..
+
+    <details><summary>Screenshots</summary>
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Sign Up 
+
+- Sign up page is from
+
+    <details><summary>Screenshots</summary>
+
+### Sign In 
+
+- The sign in page..
+
+    <details><summary>Screenshots</summary>
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### My Bookings 
+
+- When you sign up or sign in you are brought
+
+    <details><summary>Screenshots</summary>
+
+### Create Booking 
+
+- When you click on 
+
+    <details><summary>Screenshots</summary>
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Delete Modal 
+
+- Whe you press on the red delete button..
+
+    <details><summary>Screenshots</summary>
+
+### Update 
+
+- When the update button is pressed..
+
+    <details><summary>Screenshots</summary>
+
+### Sign Out 
+
+- When the red sign button..
+
+    <details><summary>Screenshots</summary>
 
 \
 &nbsp;
@@ -290,6 +374,12 @@ The Github projects tool was used to implement Agile development practices effic
 
 ## Features to be Implemented
 
+Below are a list of features to be implemented in the future:
+
+- Email verification on sign up
+- Option to sign in with social media or google credentials
+- Password reset functionality 
+- A comments feedback section about the golf lessons.
 
 \
 &nbsp;
@@ -301,15 +391,40 @@ The Github projects tool was used to implement Agile development practices effic
 
 ### Languages
 
-* [HTML](https://en.wikipedia.org/wiki/HTML "HTML") Included in CI Template.
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JS") Included in CI Template.
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python")
+- [HTML](https://en.wikipedia.org/wiki/HTML "HTML") 
+- [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JS")
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python")
 
-### Tools & Libraries
+### Frameworks
 
-* [Colorama](https://pypi.org/project/colorama/)
-* [Python Validator](https://pep8ci.herokuapp.com/)
-* [Heroku](https://dashboard.heroku.com/apps)
+- [Django](https://en.wikipedia.org/wiki/Django_(web_framework) "Django")
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework) "Bootstrap")
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+### Database
+
+- [PostgreSQL](https://www.postgresql.org/) from [ElephantSQL](https://www.elephantsql.com/).
+
+### Tools
+
+- [Python Validator](https://pep8ci.herokuapp.com/)
+- [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+- [JShint Validation Service](https://jshint.com/ "JSHint")
+- [Heroku](https://dashboard.heroku.com/apps)
+- [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview "Lighthouse")
+- [Coolers](https://coolors.co/ "Coolers")
+- [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
+- [Favicon Converter](https://favicon.io/favicon-converter/ "Favicon Converter")
+- [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+- [dbdiagram](https://dbdiagram.io/home/ "dbdiagram")
 
 \
 &nbsp;
@@ -320,6 +435,10 @@ The Github projects tool was used to implement Agile development practices effic
 ## Testing
 
 ### Code Validation
+
+- Below are screenshots of code validation
+
+    <details><summary>Screenshots</summary>
 
     
 \
@@ -334,6 +453,7 @@ The Github projects tool was used to implement Agile development practices effic
 
     |Items being tested|Actions taken to test|Expected result|Outcome|
     |---|---|---|---|
+    |test|test|test|:white_check_mark:|
     
 
     
