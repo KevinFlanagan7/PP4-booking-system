@@ -44,6 +44,10 @@ The goal of this project is to enable registered users to book golf lessons with
     - [Tools](#tools)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
+        - [HTLM](#html)
+        - [CSS](#css)
+        - [JavaScript](#javascript)
+        - [Python](#python)
     - [Features Testing](#features-testing)
     - [User Stories Testing](#user-stories-testing)
     - [Browser Compatibility](#browser-compatibility)
@@ -436,9 +440,84 @@ Below are a list of features to be implemented in the future:
 
 ### Code Validation
 
-- Below are screenshots of code validation
+#### HTML
 
-    <details><summary>Screenshots</summary>
+- <details><summary>HTML Screenshots</summary>
+
+    - Home page
+
+        ![Home](/documentation/home-page.png)
+
+    - Sign up page
+
+        ![Sign Up](/documentation/home-page.png)
+
+    - Sign in page
+
+        ![Sign In](/documentation/home-page.png)
+
+    - My Bookings page
+
+        ![My Bookings](/documentation/home-page.png)
+
+    - Create Bookings page
+
+        ![Create](/documentation/home-page.png)
+
+    - Update Booking page
+
+        ![Update](/documentation/home-page.png)
+
+    - Sign Out page
+
+        ![Sign Out](/documentation/home-page.png)
+
+
+
+#### CSS
+
+- <details><summary>CSS Screenshot</summary>
+
+    - style.css file
+
+        ![CSS](/documentation/home-page.png)
+
+
+#### JavaScript
+
+- <details><summary>JavaScript Screenshots</summary>
+
+    - script.js
+
+        ![JS](/documentation/home-page.png)
+
+#### Python
+
+- <details><summary>Python Screenshots</summary>
+
+    - model.py
+
+        ![Model](/documentation/home-page.png)
+
+    - views.py
+
+        ![Views](/documentation/home-page.png)
+
+    - forms.py
+
+        ![Forms](/documentation/home-page.png)
+
+    - urls.py
+
+        ![Urls](/documentation/home-page.png)
+
+    - admin.py
+
+        ![Admin](/documentation/home-page.png)
+
+    - settings.py
+
+        ![Settings](/documentation/home-page.png)
 
     
 \
@@ -455,9 +534,6 @@ Below are a list of features to be implemented in the future:
     |---|---|---|---|
     |test|test|test|:white_check_mark:|
     
-
-    
-
 
 \
 &nbsp;
