@@ -296,25 +296,48 @@ The Github projects tool was used to implement Agile development practices effic
 
 ### Home
 
-The home page is made up of three sections
+For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and a footer section:
 
-- Navagation bar for screensize > 768px
+<details><summary>Navigation Screenshots</summary>
+
+- Navagation bar for screensize > 768px.
 
     ![Nav](/documentation/nav-bar.png)
 
-- Navagation bar for screensize < 768px
+- Navagation bar for screensize > 768px when signed in.
+
+    ![Nav](/documentation/nav-bar-signed-in.png)
+
+
+- Navagation bar for screensize < 768px.
 
     ![Nav-mobile](/documentation/nav-bar-mobile.png)
 
+- Navagation bar for screensize < 768px when signed in.
 
+    ![Nav-mobile-signed-in](/documentation/nav-bar-mobile-signed-in.png)
 
-- Landing page..
+</details>
 
-    ![Landing](/documentation/landing.png)
+<br>
 
-- Footer..
+The landing page has 3 images in the 
 
-    ![Footer](/documentation/footer.png)
+<details><summary>Landing Screenshots</summary>
+
+![Landing](/documentation/landing.png)
+
+</details>
+
+<br>
+
+The Footer is has two logos
+
+<details><summary>Landing Screenshots</summary>
+
+![Footer](/documentation/footer.png)
+
+</details>
 
 \
 &nbsp;
