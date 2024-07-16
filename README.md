@@ -298,17 +298,23 @@ The Github projects tool was used to implement Agile development practices effic
 
 The home page is made up of three sections
 
-- Navagation...
+- Navagation bar for screensize > 768px
 
-    <details><summary>Screenshots</summary>
+    ![Nav](/documentation/nav-bar.png)
+
+- Navagation bar for screensize < 768px
+
+    ![Nav-mobile](/documentation/nav-bar-mobile.png)
+
+
 
 - Landing page..
 
-    <details><summary>Screenshots</summary>
+    ![Landing](/documentation/landing.png)
 
 - Footer..
 
-    <details><summary>Screenshots</summary>
+    ![Footer](/documentation/footer.png)
 
 \
 &nbsp;
