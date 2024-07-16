@@ -1,4 +1,4 @@
-/* GLOBAL STYLES
+/* GLOBAL STyles
 -------------------------------------------------- */
 html,
 body {
@@ -22,7 +22,7 @@ main {
   margin-left: 0.5rem;
 }
 
-/* CUSTOMIZE THE CAROUSEL
+/* CAROUSEL Styles
 -------------------------------------------------- */
 .carousel {
   margin-bottom: 2rem;
@@ -37,7 +37,7 @@ main {
   height: 32rem;
 }
 
-.carousel-item>img {
+.carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -46,17 +46,16 @@ main {
   object-fit: cover;
 }
 
-/* Featurettes
-------------------------- */
+/* FEATURETTE Styles
+-------------------------------------------------- */
 .featurette-divider {
   margin: 2rem 0;
-  /* Default margin for featurette dividers */
 }
 
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 #map {
@@ -64,9 +63,10 @@ main {
   height: 22.5rem;
 }
 
-/* Footer Styles */
+/* FOOTER STYLES
+-------------------------------------------------- */
 .social-icon {
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .fa-twitter {
@@ -74,7 +74,7 @@ main {
 }
 
 .copyright-text {
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
 }
 
 /* RESPONSIVE CSS
@@ -85,10 +85,6 @@ main {
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 3.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -96,34 +92,32 @@ main {
     margin: 4rem 0;
   }
 
-  .featurette-heading {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-
   .featurette img {
     width: 100%;
-    max-width: 100%;
     height: auto;
   }
-  
+
   .social-icon {
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
   }
-  
+
   .fa-twitter {
     margin: 0 6rem;
   }
-  
+
   .copyright-text {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
-  
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     font-size: 2.5rem;
-    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featurette-heading {
+    font-size: 2.7rem;
   }
 }

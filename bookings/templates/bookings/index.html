@@ -17,10 +17,17 @@
                 <div class="carousel-caption d-inline">
 
                     {% if request.user.is_authenticated %}
-                    <p><a class="btn btn-lg btn-primary" href="{% url 'bookings_list' %}" role="button">My Bookings</a>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="{% url 'bookings_list' %}" role="button">
+                            My Bookings
+                        </a>
                     </p>
                     {% else %}
-                    <p><a class="btn btn-lg btn-primary" href="{% url 'account_login' %}" role="button">Sign in</a></p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="{% url 'account_login' %}" role="button">
+                            Sign in
+                        </a>
+                    </p>
                     {% endif %}
                 </div>
             </div>
@@ -29,8 +36,11 @@
             <img class="second-slide" src="{% static 'images/range1.webp' %}" alt="3rd hole" loading="lazy">
             <div class="container">
                 <div class="carousel-caption">
-
-                    <p><a class="btn btn-lg btn-primary" href="#options" role="button">Options</a></p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#options" role="button">
+                            Options
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -38,19 +48,26 @@
             <img class="third-slide" src="{% static 'images/range.webp' %}" alt="5th hole" loading="lazy">
             <div class="container">
                 <div class="carousel-caption">
-
-                    <p><a class="btn btn-lg btn-primary" href="#location" role="button">Location</a></p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#location" role="button">
+                            Location
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">
+            Previous
+        </span>
     </a>
     <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">
+            Next
+        </span>
     </a>
 </div>
 
@@ -60,13 +77,19 @@
 
     <hr class="featurette-divider" id="options">
 
-    <div class="row featurette justify-content-center">
-        <div class="col-md-7 text-center">
-            <h2 class="featurette-heading">Private bay for your lesson.</h2>
-            <p class="lead">Enjoy the privacy of a private bay for your lesson with one of our qualified PGA
-                professionals.</p>
+    <div class="row featurette">
+        <div class="col-md-7 d-flex align-items-center text-center">
+            <div>
+                <h2 class="featurette-heading">
+                    Private bay for your lesson.
+                </h2>
+                <p class="lead">
+                    Enjoy the privacy of a private bay for your lesson with one of our qualified PGA
+                    professionals. Available at a competitive rate of 40 euro for a hour long session.
+                </p>
+            </div>
         </div>
-        <div class="col-md-5 text-center">
+        <div class="col-md-5">
             <img src="{% static 'images/private_bay.webp' %}"
                 class="bd-placeholder-img featurette-image img-fluid mx-auto" alt="Image of golf bay" loading="lazy">
         </div>
@@ -74,13 +97,19 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette justify-content-center">
-        <div class="col-md-7 order-md-2 text-center">
-            <h2 class="featurette-heading">Own Personal Trackman Screen.</h2>
-            <p class="lead">Each bay at the driving range has its own personal Trackman Screen to improve golf lesson
-                experience.</p>
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2 d-flex align-items-center text-center">
+            <div>
+                <h2 class="featurette-heading">
+                    Own Personal Trackman Screen.
+                </h2>
+                <p class="lead">
+                    Each bay at the driving range has its own personal Trackman Screen. Our advanced technology ensures
+                    accurate data and insights to help you improve your game efficiently.
+                </p>
+            </div>
         </div>
-        <div class="col-md-5 order-md-1 text-center">
+        <div class="col-md-5 order-md-1">
             <img src="{% static 'images/trackman.webp' %}"
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                 alt="Image of golf bay with trackman" loading="lazy">
@@ -89,20 +118,25 @@
 
     <hr class="featurette-divider" id="location">
 
-    <div class="row featurette justify-content-center">
-        <div class="col-md-7 text-center">
-            <h2 class="featurette-heading">Located in the Heart of the country.</h2>
-            <p class="lead">Situated centrally, our location provides easy access to various parts of the country. It’s
-                a convenient spot whether you're visiting for business or leisure.</p>
+    <div class="row featurette">
+        <div class="col-md-7 d-flex align-items-center text-center">
+            <div>
+                <h2 class="featurette-heading">
+                    Located in the Heart of the country.
+                </h2>
+                <p class="lead">
+                    Situated centrally, our location provides easy access to various parts of the country. You can
+                    find us at Eircode H53 P0K5, it's a convenient spot whether you're visiting for business or leisure.
+                </p>
+            </div>
         </div>
-        <div class="col-md-5 text-center">
+        <div class="col-md-5">
             <div id="map" class="bd-placeholder-img featurette-image img-fluid mx-auto"></div>
         </div>
     </div>
 
     <hr class="featurette-divider">
-    
-</div>
 
+</div>
 
 {% endblock %}
