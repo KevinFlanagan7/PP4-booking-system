@@ -36,6 +36,8 @@ The goal of this project is to enable registered users to book golf lessons with
         - [Delete Modal](#delete-modal)
         - [Update](#update)
         - [Sign Out](#sign-out)
+        - [Messages](#messages)
+        - [Email Confirmation](#email-confirmation)
     - [Features to be implemented](#features-to-be-implemented)
 - [Technologies used](#technologies-used)
     - [Languages](#languages)
@@ -296,13 +298,13 @@ The Github projects tool was used to implement Agile development practices effic
 
 ### Home
 
-For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and the footer section, details below:
+For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template and added some customized html and css code. It includes three sectioms, the navigation bar, the main landing page and the footer section, details below:
 
 <details><summary>Navigation Bar</summary>
 
 <br>
 
-The navigation bar is part of the base.html template and is displayed on all pages. It consists of the GolfAcademy name and logo which both link back to the home page. The option for unregistered users are Home, Sign up and Sign in. When registered and signed in the options are Home, My Bookings, and message to say who is signed in and the sign out option:
+The navigation bar is part of the base.html template and is displayed on all pages. It consists of the GolfAcademy name and logo which both link back to the home page. The option for unregistered users are Home, Sign up and Sign in. When registered and signed in the options are Home, My Bookings, a message to say who is signed in and the sign out option:
 
 - Navagation bar for screensize > 768px.
 
@@ -311,7 +313,6 @@ The navigation bar is part of the base.html template and is displayed on all pag
 - Navagation bar for screensize > 768px when signed in.
 
     ![Nav](/documentation/nav-bar-signed-in.png)
-
 
 - Navagation bar for screensize < 768px.
 
@@ -361,7 +362,7 @@ The landing page consists of three carousel images each with a call to action bu
 
 <br>
 
-The footer contains two logos which also double as a link back to the home page, one either side of the social media links. Like the nav bar the footer is part of the base.html template and is displayes across all pages. The social media links are only to the home pages of the pltforms for educational purposes:
+The footer contains two logos which also double as a link back to the home page, one either side of the social media icon links. Like the nav bar the footer is part of the base.html template and is displayed across all pages. The social media links are only to the home pages of the platforms for educational purposes:
 
 - Footer
 
@@ -411,7 +412,7 @@ The Sign in page includes a form for entering the users username, password and a
 
 ### My Bookings 
 
-When you sign up or sign in you are directed to the My Booking page, the nav bar menue changes to Home, My Bookings, logged in user and the option to sign out. In this page the user can view the list of future bookings and has the ability to create, delete and update bookings.
+When you sign up or sign in you are directed to the My Booking page, the nav bar menu changes to Home, My Bookings, logged in user message and the option to sign out. In this page the user can view the list of future bookings and has the ability to create, delete and update bookings.
 
 <details><summary>My Bookings</summary>
 
@@ -509,8 +510,6 @@ When the red sign out button is selected the user is directed to the sign out pa
 
     ![Sign out](/documentation/sign-out.png)
 
-
-
 </details>
 
 \
@@ -518,6 +517,51 @@ When the red sign out button is selected the user is directed to the sign out pa
 [Back to Top](#table-of-contents)
 \
 &nbsp;
+
+### Messages
+
+When a user has successfully signed up and signed in a message is displayed with the users username to say that they have signed in. There are also messages displyed to inform the user when they have succesfully created and updated a booking and when they have signed out:
+
+<details><summary>Messages</summary>
+
+<br>
+
+- Sign up and Sign in
+
+    ![Sign out/in](/documentation/sign-in-message.png)
+
+- Create message
+
+    ![Create](/documentation/booking-message.png)
+
+- Update message
+
+    ![Update](/documentation/update-message.png)
+
+- Sign out message
+
+    ![Sign out](/documentation/sign-out-message.png)
+
+</details>
+
+
+### Email Confirmation
+
+When a user creates or updates a booking, along with the successful message an email confirmation is also sent to the email address that the user provided when signing up, an email account of golflessons2024@gmail.com was set up to send the confirmation emails:
+
+<details><summary>Email confirmation</summary>
+
+<br>
+
+- Booking email confirmation
+
+    ![Email booking](/documentation/email-confirmation.png)
+
+- Update booking email confirmation
+
+    ![Email update](/documentation/email-update.png)
+
+</details>
 
 ## Features to be Implemented
 
