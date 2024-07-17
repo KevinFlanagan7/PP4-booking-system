@@ -296,9 +296,13 @@ The Github projects tool was used to implement Agile development practices effic
 
 ### Home
 
-For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and a footer section:
+For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and a footer section, details below:
 
-<details><summary>Navigation Screenshots</summary>
+<details><summary>Navigation Bar</summary>
+
+<br>
+
+The navigation bar is part of the base.html template as is displayed on all pages. It consists of the GolfAcademy name and logo which both link back to the home page. The option for unregistered users are Home, Sign up and Sign in. When registered and signed in the options are Home, My Bookings, and message to say who is signed in and the sign out option:
 
 - Navagation bar for screensize > 768px.
 
@@ -311,6 +315,8 @@ For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.
 
 - Navagation bar for screensize < 768px.
 
+    For smaller screen sizes the nav menu collapses:
+
     ![Nav-mobile](/documentation/nav-bar-mobile.png)
 
 - Navagation bar for screensize < 768px when signed in.
@@ -321,21 +327,45 @@ For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.
 
 <br>
 
-The landing page has 3 images in the 
+<details><summary>Landing Page</summary>
 
-<details><summary>Landing Screenshots</summary>
+<br>
 
-![Landing](/documentation/landing.png)
+The landing page consists of three carousel images each with a call to action button, the first is the link to the sign in page, the second links to section of page with information regarding the lessons and the third links the user to the location information of the GolfAcademy:
+
+- First Carousel image
+
+    ![First](/documentation/landing.png)
+
+- Second Carousel image
+
+    ![Second](/documentation/landing-2.png)
+
+- Third Carousel image
+
+    ![Third](/documentation/landing-3.png)
+
+- Golf Lesson link
+
+    ![Lesson](/documentation/lesson-info.png)
+
+- Location link
+
+    ![Location](/documentation/location-link.png)
 
 </details>
 
 <br>
 
-The Footer is has two logos
+<details><summary>Footer</summary>
 
-<details><summary>Landing Screenshots</summary>
+<br>
 
-![Footer](/documentation/footer.png)
+The footer contains two logos which also double as a link back to the home page, one either side of the social media links. Like the nav bar the footer is part of the base.html template and is displayes across all pages. The social media links are only to the home pages of the pltforms for educational purposes:
+
+- Footer
+
+    ![Footer](/documentation/footer.png)
 
 </details>
 
