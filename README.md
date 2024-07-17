@@ -719,7 +719,16 @@ Below are a list of features to be implemented in the future:
 
     |Items being tested|Actions taken to test|Expected result|Outcome|
     |---|---|---|---|
-    |test|test|test|:white_check_mark:|
+    |Nav bar GolfAcademy name|Click on name|Returns user to home page if not already there|:white_check_mark:|
+    |Nav bar Logo|Click on Logo|Returns user to home page if not already there|:white_check_mark:|
+    |Nav bar Home|Click on Home link|Returns user to home page if not already there|:white_check_mark:|
+    |Nav bar Sign up|Click on Sign up link|Directs user to Sign up page|:white_check_mark:|
+    |Nav bar Sign in|Click on Sign in button|Directs user to Sign in page|:white_check_mark:|
+    |Carousel Sign in|Click on carousel sign in button|Directs user to Sign in page|:white_check_mark:|
+    |Carousel Golf Lessons|Click on carousel Golf Lessons button|Directs user to golf lessons info section on home page|:white_check_mark:|
+    |Carousel Location button|Click on carousel Location buttom|Directs user to Location info section on home page|:white_check_mark:|
+    |Footer logos|Click on footer logos|Returns user to home page if not already there|:white_check_mark:|
+    |Footer Social media icons|Click on icons|Directs user to social media home pages on new tab|:white_check_mark:|
     
 
 \
