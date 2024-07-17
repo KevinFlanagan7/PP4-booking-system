@@ -729,6 +729,31 @@ Below are a list of features to be implemented in the future:
     |Carousel Location button|Click on carousel Location buttom|Directs user to Location info section on home page|:white_check_mark:|
     |Footer logos|Click on footer logos|Returns user to home page if not already there|:white_check_mark:|
     |Footer Social media icons|Click on icons|Directs user to social media home pages on new tab|:white_check_mark:|
+
+- Sign Up page
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Sign in link|Click on Sign in link at top of page if you already have an account|Directs user to Sign in page|:white_check_mark:|
+    |Email field|Enter invalid email format or leave empty and click Sign up |Messages display to enter valid email and fill out field|:white_check_mark:|
+    |Username field|Leave empty and click Sign up|Message displays to fill out field|:white_check_mark:|
+    |Password field|Leave empty or invalid lenght and characters|Messages display to fill out field with correct characters|:white_check_mark:|
+    |Password confirmation field|Leave empty or enter incorrectly|Messages to fill in filed and to enter same password displayed|:white_check_mark:|
+    |Sign Up button|Enter valid data and click button|User directed to My bookings page with a successfully signed in message with users username|:white_check_mark:|
+
+- Sign In page
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    ||||:white_check_mark:|
+    ||||:white_check_mark:|
+    ||||:white_check_mark:|
+    ||||:white_check_mark:|
+    ||||:white_check_mark:|
+
+
+    
+
     
 
 \
