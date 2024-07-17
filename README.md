@@ -296,13 +296,13 @@ The Github projects tool was used to implement Agile development practices effic
 
 ### Home
 
-For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and a footer section, details below:
+For the home page I used [Bootstrap's carousel](https://getbootstrap.com/docs/4.6/examples/carousel/) example template with some customized html and css code. It included three sectioms, the navigation bar, main landing page and the footer section, details below:
 
 <details><summary>Navigation Bar</summary>
 
 <br>
 
-The navigation bar is part of the base.html template as is displayed on all pages. It consists of the GolfAcademy name and logo which both link back to the home page. The option for unregistered users are Home, Sign up and Sign in. When registered and signed in the options are Home, My Bookings, and message to say who is signed in and the sign out option:
+The navigation bar is part of the base.html template and is displayed on all pages. It consists of the GolfAcademy name and logo which both link back to the home page. The option for unregistered users are Home, Sign up and Sign in. When registered and signed in the options are Home, My Bookings, and message to say who is signed in and the sign out option:
 
 - Navagation bar for screensize > 768px.
 
@@ -331,7 +331,7 @@ The navigation bar is part of the base.html template as is displayed on all page
 
 <br>
 
-The landing page consists of three carousel images each with a call to action button, the first is the link to the sign in page, the second links to section of page with information regarding the lessons and the third links the user to the location information of the GolfAcademy:
+The landing page consists of three carousel images each with a call to action button, the first is the link to the sign in page, the second links to the section of home page with information regarding the lessons and the third links the user to the location information of the GolfAcademy:
 
 - First Carousel image
 
