@@ -377,15 +377,31 @@ The footer contains two logos which also double as a link back to the home page,
 
 ### Sign Up 
 
-- Sign up page is from
+The Sign up page includes a form for entering the users email address, username, password and a sign up button once details have been entered. At the top of the page it gives the option to be redirected to the sign in page if the user has already signed up.
 
-    <details><summary>Screenshots</summary>
+<details><summary>Sign Up</summary>
+
+<br>
+
+- Sign Up
+
+    ![Sign up](/documentation/sign-up.png)
+
+</details>
 
 ### Sign In 
 
-- The sign in page..
+The Sign in page includes a form for entering the users username, password and a sign in button once details have been entered. At the top of the page it gives the option to be redirected to the sign up page if the user has not already signed up.
 
-    <details><summary>Screenshots</summary>
+<details><summary>Sign In</summary>
+
+<br>
+
+- Sign In
+
+    ![Sign in](/documentation/sign-in.png)
+
+</details>
 
 \
 &nbsp;
@@ -395,15 +411,45 @@ The footer contains two logos which also double as a link back to the home page,
 
 ### My Bookings 
 
-- When you sign up or sign in you are brought
+When you sign up or sign in you are directed to the My Booking page, the nav bar menue changes to Home, My Bookings, logged in user and the option to sign out. In this page the user can view the list of future bookings and has the ability to create, delete and update bookings.
 
-    <details><summary>Screenshots</summary>
+<details><summary>My Bookings</summary>
+
+<br>
+
+- My Bookings
+
+    ![My Bookings](/documentation/my-bookings.png)
+
+</details>
 
 ### Create Booking 
 
-- When you click on 
+When the signed in user clicks on create new booking button they are directed to a form to select a date, time slot and a button to submit booking. The lessons are only available Monday to Friday between 9am and 5pm, if Saturday or Sunday is selected a message is displayed that you can only book from Monday to Friday.
 
-    <details><summary>Screenshots</summary>
+If a date in the past is select a message will be displayed that you can not book a date in the past. If the user selects a date and time that is not available a message will be displayed to say date and time slot has already been booked:
+
+<details><summary>Create new booking</summary>
+
+<br>
+
+- Create new booking
+
+    ![Create new booking](/documentation/create-new.png)
+
+- Weekend day selected
+
+    ![Weekend](/documentation/weekend-booking.png)
+
+- Date in the past selected
+
+    ![Past](/documentation/past-booking.png)
+
+- Date and time slot already booked
+
+    ![Booked](/documentation/booking-gone.png)
+
+</details>
 
 \
 &nbsp;
@@ -413,21 +459,59 @@ The footer contains two logos which also double as a link back to the home page,
 
 ### Delete Modal 
 
-- Whe you press on the red delete button..
+When the user selects the delete button for a booking the delete modal is displayed warning the user that the booking will be permanently deleted with the option to continue with deletion or to close the modal.
 
-    <details><summary>Screenshots</summary>
+<details><summary>Delete Modal</summary>
+
+<br>
+
+- Delete modal
+
+    ![Delete modal](/documentation/delete-modal.png)
+
+</details>
 
 ### Update 
 
-- When the update button is pressed..
+When the signed in user clicks on the update booking button they are directed to a form to select a date, time slot and a button to update booking. Like with the create booking page the lessons are only available Monday to Friday between 9am and 5pm, the user can not select date in the past and will also get a message if updated date and time slot has already been booked:
 
-    <details><summary>Screenshots</summary>
+<details><summary>Update booking</summary>
+
+<br>
+
+- Update booking
+
+    ![Update booking](/documentation/update-booking.png)
+
+- Update with Weekend day selected
+
+    ![Update Weekend](/documentation/weekend-update.png)
+
+- Update with Date in the past selected
+
+    ![Update Past](/documentation/past-update.png)
+
+- Update with Date and time slot already booked
+
+    ![Update Booked](/documentation/update-gone.png)
+
+</details>
 
 ### Sign Out 
 
-- When the red sign button..
+When the red sign out button is selected the user is directed to the sign out page with a message asking user if they are sure they want to sign out. Once sign out is selected the user is directed back to the home page, the sign out button and signed in message is no longer displayed:
 
-    <details><summary>Screenshots</summary>
+<details><summary>Sign Out</summary>
+
+<br>
+
+- Sign out
+
+    ![Sign out](/documentation/sign-out.png)
+
+
+
+</details>
 
 \
 &nbsp;
