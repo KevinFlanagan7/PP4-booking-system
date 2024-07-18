@@ -46,10 +46,6 @@ The goal of this project is to enable registered users to book golf lessons with
     - [Tools](#tools)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
-        - [HTLM](#html)
-        - [CSS](#css)
-        - [JavaScript](#javascript)
-        - [Python](#python)
     - [Lighthouse](#lighthouse)
     - [Features Testing](#features-testing)
     - [User Stories Testing](#user-stories-testing)
@@ -691,27 +687,27 @@ Below are a list of features to be implemented in the future:
 
 - model.py
 
-    ![Model](/documentation/home-page.png)
+    ![Model](/documentation/code-model.png)
 
 - views.py
 
-    ![Views](/documentation/home-page.png)
+    ![Views](/documentation/code-views.png)
 
 - forms.py
 
-    ![Forms](/documentation/home-page.png)
+    ![Forms](/documentation/code-forms.png)
 
 - urls.py
 
-    ![Urls](/documentation/home-page.png)
+    ![Urls](/documentation/code-urls.png)
 
 - admin.py
 
-    ![Admin](/documentation/home-page.png)
+    ![Admin](/documentation/code-admin.png)
 
 - settings.py
 
-    ![Settings](/documentation/home-page.png)
+    ![Settings](/documentation)
 
 </details>
    
@@ -950,7 +946,6 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
     | Device                | Responsive >=768px | Responsive <768px | Landing page Image |
     | --------------------- | ------------------ | ----------------- | ----------- | 
-    | Galaxy S9+            | N/A                | Good              | Good        |
     | Galaxy S5             | N/A                | Good              | Good        |
     | iPhone 6/7/8          | N/A                | Good              | Good        |
     | iPad Pro              | Good               | N/A               | Good        |

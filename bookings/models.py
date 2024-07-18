@@ -1,8 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
 class Booking(models.Model):
+    """
+    Model of a booking made by a user.
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
     time = models.TimeField()
@@ -12,16 +15,7 @@ class Booking(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
+        """
+        Returns a string indicating the user who made the booking.
+        """
         return f"Booking by {self.user}"
-
-class Comment(models.Model):
-    booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name='comment')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    comment = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ["created_on"]
-
-    def __str__(self):
-        return f"Comment by {self.user}"
