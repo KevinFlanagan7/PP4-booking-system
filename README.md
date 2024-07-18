@@ -50,8 +50,10 @@ The goal of this project is to enable registered users to book golf lessons with
         - [CSS](#css)
         - [JavaScript](#javascript)
         - [Python](#python)
+    - [Lighthouse](#lighthouse)
     - [Features Testing](#features-testing)
     - [User Stories Testing](#user-stories-testing)
+    - [Responsiveness](#responsiveness)
     - [Browser Compatibility](#browser-compatibility)
     - [Bugs](#bugs)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -717,6 +719,121 @@ Below are a list of features to be implemented in the future:
 \
 &nbsp;
 
+### Lighthouse
+
+Lighthouse tests were run on all pages for mobile and desktop, see results below:
+
+<details><summary>Home page</summary>
+
+<br>
+
+- Home page desktop
+
+    ![Home Desktop](/documentation/lighthouse-home-desktop.png)
+
+- Home page mobile
+
+    ![Home mobile](/documentation/lighthouse-home-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>Sign up page</summary>
+
+<br>
+
+- Sign up page desktop
+
+    ![Sign up Desktop](/documentation/lighthouse-signup-desktop.png)
+
+- Sign up page mobile
+
+    ![Sign up mobile](/documentation/lighthouse-signup-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>Sign in page</summary>
+
+<br>
+
+- Sign in page desktop
+
+    ![Sign in Desktop](/documentation/lighthouse-signin-desktop.png)
+
+- Sign in page mobile
+
+    ![Sign in mobile](/documentation/lighthouse-signin-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>My Bookings page</summary>
+
+<br>
+
+- My Bookings page desktop
+
+    ![Bookings Desktop](/documentation/lighthouse-mybookings-desktop.png)
+
+- My Bookings page mobile
+
+    ![Bookings mobile](/documentation/lighthouse-mybookings-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>Create Bookings page</summary>
+
+<br>
+
+- Create Bookings page desktop
+
+    ![Create Desktop](/documentation/lighthouse-create-desktop.png)
+
+- Create Bookings page mobile
+
+    ![Create mobile](/documentation/lighthouse-create-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>Update Bookings page</summary>
+
+<br>
+
+- Update Bookings page desktop
+
+    ![Update Desktop](/documentation/lighthouse-update-desktop.png)
+
+- Update Bookings page mobile
+
+    ![Update mobile](/documentation/lighthouse-update-mobile.png)
+
+</details>
+
+<br>
+
+<details><summary>Sign out page</summary>
+
+<br>
+
+- Sign out page desktop
+
+    ![Sign out Desktop](/documentation/lighthouse-signout-desktop.png)
+
+- Sign out page mobile
+
+    ![Sign out mobile](/documentation/lighthouse-signout-mobile.png)
+
+</details>
+
+
 ### Features Testing
 
 - Home Page 
@@ -820,29 +937,66 @@ Below are a list of features to be implemented in the future:
 \
 &nbsp;
 
+### Responsiveness
+
+- Using Chrome Mobile [Simulator](https://developer.chrome.com/docs/devtools/device-mode "Simulator") extension I have tested the website's responsiveness on different devices. Test results and screenshots below:
+
+    | Device                | Responsive >=768px | Responsive <768px | Landing page Image |
+    | --------------------- | ------------------ | ----------------- | ----------- | 
+    | Galaxy S9+            | N/A                | Good              | Good        |
+    | Galaxy S5             | N/A                | Good              | Good        |
+    | iPhone 6/7/8          | N/A                | Good              | Good        |
+    | iPad Pro              | Good               | N/A               | Good        |
+    | Desktop 1024px        | Good               | N/A               | Good        |
+    | Desktop > 1200px      | Good               | N/A               | Good        |
+
+    <details><summary>Responsiveness Screenshots</summary>
+
+    *Mobile*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------ |
+    | ![Landing Page](/documentation/landing-page-mobile.png) | ![Quiz Area](/documentation/quiz-area-mobile.png) | ![Results Area](/documentation/results-area-mobile.png) |
+
+    *Tablet*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------- |
+    | ![Landing Page](/documentation/landing-page-tablet.png) | ![Quiz Area](/documentation/quiz-area-tablet.png) | ![Results Area](/documentation/results-area-tablet.png) | 
+
+    *Desktop*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------ |
+    | ![Landing Page](/documentation/landing-page-desktop.png) | ![Quiz Area](/documentation/quiz-area-desktop.png) | ![Results Area](/documentation/results-area-desktop.png)|   
+
+\
+
 ### Browser Compatibility
 
-- Table of Browsers tested, as the project is terminal based mobile device testing was not applicable.
+- Table of Browsers tested:
 
   | Browser | Intented Appearance | Intented Responsiveness | 
     | --------| ------------------- | ----------------------- |
-    | Chrome  |  |  | 
-    | Edge    |  |  | 
-    | Firefox |  |  |
+    | Chrome  | Good | Good | 
+    | Edge    | Good | Good | 
+    | Firefox | Good | Good |
 
     <details><summary>Browser compatibility Screenshots</summary>
 
+    <br>
+
     *Chrome*
 
-    ![Chrome]() 
+    ![Chrome](/documentation/chrome.png) 
 
     *Edge*
 
-    ![Edge]()
+    ![Edge](/documentation/edge.png)
 
     *Firefox*
 
-    ![Firefox]()
+    ![Firefox](/documentation/firefox.png)
 
 \
 &nbsp;
