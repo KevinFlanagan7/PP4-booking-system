@@ -520,7 +520,7 @@ When the red sign out button is selected the user is directed to the sign out pa
 
 ### Messages
 
-When a user has successfully signed up and signed in a message is displayed with the users username to say that they have signed in. There are also messages displyed to inform the user when they have succesfully created and updated a booking and when they have signed out:
+When a user has successfully signed up and signed in a message is displayed with the users username to say that they have signed in. There are also messages displyed to inform the user when they have succesfully created, deleted and updated a booking and when they have signed out:
 
 <details><summary>Messages</summary>
 
@@ -533,6 +533,10 @@ When a user has successfully signed up and signed in a message is displayed with
 - Create message
 
     ![Create](/documentation/booking-message.png)
+
+- Delete message
+
+    ![Delete](/documentation/delete-message.png)
 
 - Update message
 
@@ -739,22 +743,61 @@ Below are a list of features to be implemented in the future:
     |Username field|Leave empty and click Sign up|Message displays to fill out field|:white_check_mark:|
     |Password field|Leave empty or invalid lenght and characters|Messages display to fill out field with correct characters|:white_check_mark:|
     |Password confirmation field|Leave empty or enter incorrectly|Messages to fill in filed and to enter same password displayed|:white_check_mark:|
-    |Sign Up button|Enter valid data and click button|User directed to My bookings page with a successfully signed in message with users username|:white_check_mark:|
+    |Sign Up button|Enter valid data and click button|User directed to My bookings page with a successfully signed in message with users username displayed|:white_check_mark:|
 
 - Sign In page
 
     |Items being tested|Actions taken to test|Expected result|Outcome|
     |---|---|---|---|
-    ||||:white_check_mark:|
-    ||||:white_check_mark:|
-    ||||:white_check_mark:|
-    ||||:white_check_mark:|
-    ||||:white_check_mark:|
+    |Sign up link|Click on Sign up link at top of page if user has not Signed up yet|Directs user to Sign up page|:white_check_mark:|
+    |Username field|Leave empty or enter invalid username and click Sign in|Messages display to fill out field or username and or password is not correct|:white_check_mark:|
+    |Password field|Leave empty or enter invalid password and click Sign in|Messages display to fill out field or username and or password is not correct|:white_check_mark:|
+    |Sign In button|Enter valid data and click button|User directed to My bookings page with a successfully signed in message with users username displayed|:white_check_mark:|
 
+- My Bookings Page
 
-    
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |My Bookings link in nav bar|Click on link|User directed to my booking page if not already there|:white_check_mark:|
+    |Sign Out button|Click on button|User directed to Sign out page|:white_check_mark:|
+    |Create a new booking button|Click on button|User directed to Create new booking page|:white_check_mark:|
 
-    
+- Create new booking page
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Select Date field|Click on calendar icon on larger screens and anywhere in field for smaller screen sizes|Date picker calendar displays with current date highlighted|:white_check_mark:|
+    |Date in past message|Select date in past and click submit|Message displays that you can not book date in past|:white_check_mark:|
+    |Weekend day message|Select a weekend day and click submit|Message displays that you can only book date from Monday to Friday|:white_check_mark:|
+    |Slot already booked message|Select same date and time as another booking|Message displays that this date and time slot has already been booked|:white_check_mark:|
+    |Select time field|Click dropdown arrow or anywhere in field|List of 1 hour time slots from 9am-5pm excluding 1-2 for lunch are displayed to select|:white_check_mark:|
+    |Submit button|Select valid date and time that has not already been booked and click Submit button|User directed back to my booking page with a booking created successfully message displayed confirmation email was sent, bookings created listed on page|:white_check_mark:|
+
+- Delete modal
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Delete button|Click on delete button beside a booking|Delete booking modal displays asking user if they are sure they want to permanently delete booking|:white_check_mark:|
+    |Delete modal close button|Click on delete modal close button|User returned to My bookings page and booking is not deleted|:white_check_mark:|
+    |Delete modal delete button|Click on delete modal delete button|User returned to My booking page with message that booking has been deleted successfully, booking no longer listed on page |:white_check_mark:|
+
+- Update page
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Update button|Click on update button beside a booking|User directed to update booking page:white_check_mark:|
+    |Select Date field|Click on calendar icon on larger screens and anywhere in field for smaller screen sizes|Date picker calendar displays with current date highlighted|:white_check_mark:|
+    |Date in past message|Select date in past and click update|Message displays that you can not book date in past|:white_check_mark:|
+    |Weekend day message|Select a weekend day and click update|Message displays that you can only book date from Monday to Friday|:white_check_mark:|
+    |Slot already booked message|Select same date and time as another booking and click update|Message displays that this date and time slot has already been booked|:white_check_mark:|
+    |Select time field|Click dropdown arrow or anywhere in field|List of 1 hour time slots from 9am-5pm excluding 1-2 for lunch are displayed to select|:white_check_mark:|
+    |Update button|Select valid date and time that has not already been booked and click Update button|User directed back to my booking page, booking updated successfully message displayed and confirmation email was sent, updated booking listed on page|:white_check_mark:|
+
+- Sign Out page
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Sign out button|Click on button under message asking user if they are sure they want to Sign out|User directed back to home page with a confirmation message that they have signed out|:white_check_mark:|
 
 \
 &nbsp;
