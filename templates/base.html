@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
+<!-- Includes head section with meta tags, title, and links to CSS files -->
 {% include 'layout/head.html' %}
 
 <body class="d-flex flex-column h-100">
@@ -20,14 +21,14 @@
 
     <main class="flex-shrink-0 bg-light">
         {% block content %}
-        
+        <!-- Main content block where different views will be rendered -->
         {% endblock content %}
     </main>
 
     <!-- Footer -->
     {% include 'layout/footer.html' %}
 
-    <!-- Scripts -->
+    <!-- Scripts including JavaScript file -->
     {% include 'layout/scripts.html' %}
 </body>
 </html>

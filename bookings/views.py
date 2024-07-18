@@ -21,7 +21,7 @@ def home_page(request):
 def bookings_list(request):
     current_date = timezone.now().date()
     bookings = Booking.objects.filter(user=request.user, date__gte=current_date)
-    return render(request, 'bookings/list.html', {'bookings_list': bookings})
+    return render(request, 'bookings/my-bookings.html', {'bookings_list': bookings})
 
 
 @login_required
@@ -40,7 +40,7 @@ def create_booking(request):
                 'booking': booking,
                 'is_update': False
             }
-            message = render_to_string('bookings/email_confirmation.html', email_context)
+            message = render_to_string('bookings/email-confirmation.html', email_context)
             from_email = settings.EMAIL_HOST_USER
             recipient_list = [request.user.email]
             send_mail(subject, '', from_email, recipient_list, html_message=message)
@@ -76,7 +76,7 @@ def update_booking(request, booking_id):
                 'booking': booking,
                 'is_update': True
             }
-            message = render_to_string('bookings/email_confirmation.html', email_context)
+            message = render_to_string('bookings/email-confirmation.html', email_context)
             from_email = settings.EMAIL_HOST_USER
             recipient_list = [request.user.email]
             send_mail(subject, '', from_email, recipient_list, html_message=message)

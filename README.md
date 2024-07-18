@@ -633,86 +633,88 @@ Below are a list of features to be implemented in the future:
 
 ### Code Validation
 
-#### HTML
+<details><summary>HTML files</summary>
 
-- <details><summary>HTML Screenshots</summary>
+- Home page
 
-    - Home page
+    ![Home](/documentation/code-home.png)
 
-        ![Home](/documentation/home-page.png)
+- Sign up page
 
-    - Sign up page
+    ![Sign Up](/documentation/code-signup.png)
 
-        ![Sign Up](/documentation/home-page.png)
+- Sign in page
 
-    - Sign in page
+    ![Sign In](/documentation/code-signin.png)
 
-        ![Sign In](/documentation/home-page.png)
+- My Bookings page
 
-    - My Bookings page
+    ![My Bookings](/documentation/code-mybookings.png)
 
-        ![My Bookings](/documentation/home-page.png)
+- Create Bookings page
 
-    - Create Bookings page
+    ![Create](/documentation/code-create.png)
 
-        ![Create](/documentation/home-page.png)
+- Update Booking page
 
-    - Update Booking page
+    ![Update](/documentation/code-update.png)
 
-        ![Update](/documentation/home-page.png)
+- Sign Out page
 
-    - Sign Out page
+    ![Sign Out](/documentation/code-signout.png)
 
-        ![Sign Out](/documentation/home-page.png)
+</details>
 
+<br>
 
+<details><summary>CSS file</summary>
 
-#### CSS
+- style.css file
 
-- <details><summary>CSS Screenshot</summary>
+    ![CSS](/documentation/code-css.png)
 
-    - style.css file
+</details>
 
-        ![CSS](/documentation/home-page.png)
+<br>
 
+<details><summary>JavaScript file</summary>
 
-#### JavaScript
+- script.js
 
-- <details><summary>JavaScript Screenshots</summary>
+    ![JS](/documentation/code-js.png)
 
-    - script.js
+</details>
 
-        ![JS](/documentation/home-page.png)
+<br>
 
-#### Python
+<details><summary>Python files</summary>
 
-- <details><summary>Python Screenshots</summary>
+- model.py
 
-    - model.py
+    ![Model](/documentation/home-page.png)
 
-        ![Model](/documentation/home-page.png)
+- views.py
 
-    - views.py
+    ![Views](/documentation/home-page.png)
 
-        ![Views](/documentation/home-page.png)
+- forms.py
 
-    - forms.py
+    ![Forms](/documentation/home-page.png)
 
-        ![Forms](/documentation/home-page.png)
+- urls.py
 
-    - urls.py
+    ![Urls](/documentation/home-page.png)
 
-        ![Urls](/documentation/home-page.png)
+- admin.py
 
-    - admin.py
+    ![Admin](/documentation/home-page.png)
 
-        ![Admin](/documentation/home-page.png)
+- settings.py
 
-    - settings.py
+    ![Settings](/documentation/home-page.png)
 
-        ![Settings](/documentation/home-page.png)
-
-    
+</details>
+   
 \
 &nbsp;
 [Back to Top](#table-of-contents)
@@ -833,6 +835,11 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 </details>
 
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Features Testing
 

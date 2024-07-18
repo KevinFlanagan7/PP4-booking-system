@@ -6,18 +6,26 @@
 {% block content %}
 <div class="container mt-5 text-left shadow-lg rounded">
     {% if form_type == 'create' %}
-        <h1 class="text-center mb-5">Create a new booking</h1>
+    <h1 class="text-center mb-5">
+        Create a new booking
+    </h1>
     {% elif form_type == 'update' %}
-        <h1 class="text-center mb-5">Update booking</h1>
+    <h1 class="text-center mb-5">
+        Update booking
+    </h1>
     {% endif %}
     <form method="post">
         {% csrf_token %}
         {{ form|crispy }}
         <div class="text-center">
             {% if form_type == 'create' %}
-                <button type="submit" class="btn btn-primary btn-lg mt-5 mb-5">Submit</button>
+            <button type="submit" class="btn btn-primary btn-lg mt-5 mb-5">
+                Submit
+            </button>
             {% elif form_type == 'update' %}
-                <button type="submit" class="btn btn-warning btn-lg mt-5 mb-5">Update</button>
+            <button type="submit" class="btn btn-warning btn-lg mt-5 mb-5">
+                Update
+            </button>
             {% endif %}
         </div>
     </form>

@@ -7,21 +7,32 @@
 {% block content %}
 
 <div class="container mt-5 text-center shadow-lg rounded">
-    <h1>My Bookings</h1>
-    <p class="mb-5">Welcome {{ user.username }}! Below is a list of your golf lesson bookings:</p>
+    <h1>
+        My Bookings
+    </h1>
+    <p class="mb-5">
+        Welcome {{ user.username }}! Below is a list of your golf lesson bookings:
+    </p>
     <ul class="list-unstyled">
         {% for booking in bookings_list %}
         <li class="mb-3">
             {{ booking.date }} at {{ booking.time|time:"H:i" }}
-            <button class="btn btn-delete btn-danger" booking_id="{{ booking.id }}">Delete</button>
-            <a href="{% url 'update_booking' booking.id %}" class="btn btn-warning">Update</a>
+            <button class="btn btn-delete btn-danger" booking_id="{{ booking.id }}">
+                Delete
+            </button>
+            <a href="{% url 'update_booking' booking.id %}" class="btn btn-warning">
+                Update
+            </a>
         </li>
         {% empty %}
-        <li>No bookings available.</li>
+        <li>
+            No bookings available.
+        </li>
         {% endfor %}
     </ul>
-
-    <a href="{% url 'create_booking' %}" class="btn btn-lg btn-info mt-5 mb-5">Create a new booking</a>
+    <a href="{% url 'create_booking' %}" class="btn btn-lg btn-info mt-5 mb-5">
+        Create a new booking
+    </a>
 </div>
 
 <!-- Delete confirmation modal -->
@@ -29,17 +40,23 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Delete Booking?</h5>
+                <h5 class="modal-title" id="deleteModalLabel">
+                    Delete Booking?
+                </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 Are you sure you want to permanently delete your booking?
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
                 <form id="deleteForm" method="post">
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">
+                        Delete
+                    </button>
                 </form>
             </div>
         </div>
