@@ -120,7 +120,7 @@ I have used the [Font Awesome library](https://fontawesome.com/ "Font Awesome") 
 
 ### Structure
 
-I have built the website with a mobile first mindset using the iphone 6 (375px) as the smallest screen size for styling to look good on. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/).
+I have built the website with a mobile first mindset using the Galaxy S5 (360px) as the smallest screen size for styling to look good on. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/).
 
 | Screen Size | Breakpoint |
 | ----------- | ---------- |
@@ -930,9 +930,17 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 - Table of User Story Testing.
 
-    | User Story | Testing |
-    | :--- | :--- | 
-    |As a user, ||
+    |User Story|Testing|Result|
+    |---|---|---|
+    |As a user, I want to be able to easily navigate through the website on all devices.| Navigation bar displays clear menu options which are intuitive and collapse down to a drop down menu on smaller screen sizes.|:white_check_mark:|
+    |As a user, I want to easily access information to learn about the golf academy and its offerings.| The home page provides all the information about the Golf Academy regarding lessons, duration, price and facilities.|:white_check_mark:|
+    |As a user, As a user, I want to find the location on a map so I can easily plan my visit.| The home page provides provide a map of the location and the eircode of the Golf Academy.|:white_check_mark:|
+    |As a user, I want to easily register an account with the golf academy.| The nav bar on the home page provides a link to the Sign up page, when the user enters a valid email, username and password they are signed into their bookings page.|:white_check_mark:|
+    |As a user, I want to sign into my account to create, read, update and delete bookings.| The nav bar on the home page provides a link to the Sign in page, there is also a Sign in button on the first carousel image, when the user enters a valid username and password they are signed into their my bookings page where they can easily create, read, update and delete bookings.|:white_check_mark:|
+    |As a user, I want clear notification messages when I complete an action successfully.|When a user successfully signs up, signs in, creates, updates, deletes and signs out there is a green success message displayed.|:white_check_mark:|
+    |As a user, I want to clearly know when I'm signed into and out of my account.|When the user is signed into their account there is a message displayed at the right hand side of the nav bar that the username is signed in and the option to sign out in red beside it. The message and sign out option are not displayed if the user is not signed in.|:white_check_mark:|
+    |As a user, I want to receive email confirmation when I make or update a booking.| When the user creates or updates a booking a green success message along with a email confirmation sent message is displayed, the new or updated booking details are emailed to the email address that the user resistered when they signed up.|:white_check_mark:|
+
     
 \
 &nbsp;
@@ -944,7 +952,7 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 - Using Chrome Mobile [Simulator](https://developer.chrome.com/docs/devtools/device-mode "Simulator") extension I have tested the website's responsiveness on different devices. Test results and screenshots below:
 
-    | Device                | Responsive >=768px | Responsive <768px | Landing page Image |
+    | Device                | Responsive >=768px | Responsive <768px | Landing page Images |
     | --------------------- | ------------------ | ----------------- | ----------- | 
     | Galaxy S5             | N/A                | Good              | Good        |
     | iPhone 6/7/8          | N/A                | Good              | Good        |
@@ -954,25 +962,31 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
     <details><summary>Responsiveness Screenshots</summary>
 
-    *Mobile*
+    <br>
 
-    | Landing Page | Quiz Area | Results Area |
+    **Mobile**
+
+    | Home Page | Sign in Page | Bookings Page |
     | ---- | ----- | ------ |
-    | ![Landing Page](/documentation/landing-page-mobile.png) | ![Quiz Area](/documentation/quiz-area-mobile.png) | ![Results Area](/documentation/results-area-mobile.png) |
+    | ![Home](/documentation/resp-mobile-home.png) | ![Sign](/documentation/resp-mobile-signin.png) | ![Bookings](/documentation/resp-mobile-bookings.png) |
 
-    *Tablet*
+    **Tablet**
 
-    | Landing Page | Quiz Area | Results Area |
-    | ---- | ----- | ------- |
-    | ![Landing Page](/documentation/landing-page-tablet.png) | ![Quiz Area](/documentation/quiz-area-tablet.png) | ![Results Area](/documentation/results-area-tablet.png) | 
-
-    *Desktop*
-
-    | Landing Page | Quiz Area | Results Area |
+    | Home Page | Sign in Page | Bookings Page |
     | ---- | ----- | ------ |
-    | ![Landing Page](/documentation/landing-page-desktop.png) | ![Quiz Area](/documentation/quiz-area-desktop.png) | ![Results Area](/documentation/results-area-desktop.png)|   
+    | ![Home](/documentation/ipad-home.png) | ![Sign](/documentation/ipad-signin.png) | ![Bookings](/documentation/ipad-bookings.png) |
+
+    **Desktop**
+
+    | Home Page | Sign in Page | Bookings Page |
+    | ---- | ----- | ------ |
+    | ![Home](/documentation/resp-desktop-home.png) | ![Sign](/documentation/resp-desktop-signin.png) | ![Bookings](/documentation/resp-desktop-bookings.png) |  
 
 \
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Browser Compatibility
 
