@@ -57,6 +57,7 @@ The goal of this project is to enable registered users to book golf lessons with
     - [Heroku](#heroku)
     - [Fork](#fork)
     - [Clone](#clone)
+    - [Run Locally](#run-locally)
 - [Credits](#credits)
 - [Comments](#comments)
 
@@ -258,7 +259,7 @@ I used Agile methodology to plan my project. It allowed me to break down the pro
 
 #### Epics & Milestones
 
-My project is made up of six Epics which are large bodies of work that can be broken down into smaller, more manageable user stories. They provide an overview of the main functionalities to deliver, there are five milestones associated to the projects Epics. For my project, the Milestones with associated Epics and user stories can be viewed at the links below:
+My project is made up of several Epics which are large bodies of work that can be broken down into smaller, more manageable tasks. They provide an overview of the main functionalities to deliver, there are six milestones associated to the projects Epics. For my project, the Milestones with associated Epics, stories and tasks can be viewed at the links below:
 
 - [Milestone 1 - Initial Set Up](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/1)
 
@@ -269,6 +270,8 @@ My project is made up of six Epics which are large bodies of work that can be br
 - [Milestone 4 - Implement and Enhance Website Styling](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/4)
 
 - [Milestone 5 - Email confirmation](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/5)
+
+- [Milestone 6 - README Documentation](https://github.com/KevinFlanagan7/PP4-booking-system/milestone/6)
 
 \
 &nbsp;
@@ -707,7 +710,7 @@ Below are a list of features to be implemented in the future:
 
 - settings.py
 
-    ![Settings](/documentation)
+    ![Settings](/documentation/code-settings.png)
 
 </details>
    
@@ -924,7 +927,6 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 [Back to Top](#table-of-contents)
 \
 &nbsp;
-
         
 ### User Stories Testing
 
@@ -940,7 +942,6 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
     |As a user, I want clear notification messages when I complete an action successfully.|When a user successfully signs up, signs in, creates, updates, deletes and signs out there is a green success message displayed.|:white_check_mark:|
     |As a user, I want to clearly know when I'm signed into and out of my account.|When the user is signed into their account there is a message displayed at the right hand side of the nav bar that the username is signed in and the option to sign out in red beside it. The message and sign out option are not displayed if the user is not signed in.|:white_check_mark:|
     |As a user, I want to receive email confirmation when I make or update a booking.| When the user creates or updates a booking a green success message along with a email confirmation sent message is displayed, the new or updated booking details are emailed to the email address that the user resistered when they signed up.|:white_check_mark:|
-
     
 \
 &nbsp;
@@ -1022,10 +1023,13 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 ### Bugs
 
+- Thankfully I didn't encounter any major bugs during development just small issues like pages not rendering correctly an deployed site and locally. This was caused by not running the collect static files command before deployment and by not changing the debug level back to True when working locally.
+
+- The other issues encountered was with Lighthouse testing, the performane and best pratices scores were low. I improved the performance by converting all images to webp format. The best practice score was low due to originally using a google iframe for the map location. I chaged this to the google maps api when improved the score.
 
 ### Unfixed Bugs
 
-
+- There are no bugs with the game that I am aware of.
 
 \
 &nbsp;
@@ -1039,9 +1043,15 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 The site was deployed using Heroku following the steps below:
 
-- Create a list of requirements using the following command in the terminal (pip3 freeze > requirements.txt).
+- Create a list of requirements using the following command in the terminal (`pip3 freeze > requirements.txt`).
 
 - Heroku searches for this exact file name as it builds the project. This file contains the list of the packages installed during project development which are called dependencies. We need Heroku to install these dependecies as well in order for the project to run. 
+
+- A **Procfile** is required to allow Heroku deployment to be properly configured to a gunicorn web app.
+
+- In settings.py file configure the ALLOWED_HOSTS list with **heroku.com**.
+
+- All environment variables in the env.py which gitignored on the repo must be configured correctly with the database details and secret keys.
 
 - Activate your Heroku Student Pack account at the following link: [Heroku for Students]( https://www.heroku.com/github-students).
 
@@ -1049,17 +1059,7 @@ The site was deployed using Heroku following the steps below:
 
 - Click on the **Settings** tab of the newly created app.
 
-- Go to **Config Vars** section and in the field for KEY enter **PORT**, in the VALUE field enter **8000** and then click **ADD**.
-
-- If your project uses a **creds.json** file you will need to set a config var by adding **CREDS** to KEY field and copying contents of creds.json file into **VALUE** field.
-
-- Go to Buildpacks section and click on **Add buildpack**.
-
-- Select **python** and click on **Save changes**.
-
-- Click on **Add buildpack** again, select **nodejs** and click on **Save changes**.
-
-- Make sure buildpacks are in order with python on top and nodejs underneath.
+- Go to **Config Vars** section and enter the required hidden variables like database details and secret keys.
 
 - Click on **Deploy** tab at top of screen.
 
@@ -1090,6 +1090,17 @@ To copy the repository to your local machine in Github follow steps below:
 - Type **git clone** and paste the URL from the clipboard. 
 - Press **Enter** to create your local clone.
 
+### Run Locally
+
+- Go to the **GitHub repository**.
+- Locate the green **Code** button above the list of files and click it.
+- From the dropdown menu select **download Zip**.
+- **Download** and open the zip file to run in an editor.
+- Create an **env.py** file and input the environment variables
+- Ensure **PostgreSQL** is installed on your computer and ports are open
+- Create a virtual environment for installing the **python modules** in the pip file.
+- Run python **makemigrations, migrate and runserver**.
+
 \
 &nbsp;
 [Back to Top](#table-of-contents)
@@ -1105,7 +1116,6 @@ For help and advice:
 Code inspiration:
 
 - [LMS Django Walkthrough Project](https://codeinstitute.net "Developing with Django")
-
 
 
 \
