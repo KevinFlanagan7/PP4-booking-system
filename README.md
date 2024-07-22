@@ -4,7 +4,7 @@
 
 ## Project Goals
 
-The goal of this project is to enable registered users to book golf lessons with a PGA qualified professional at a Golf Academy. Once the user has registered an account they will be able to create, read, update and delete their booking at a state of the art driving range. The administrator of the booking site with also have full CRUD capibilities of the booking site.
+The goal of this project is to enable registered users to book golf lessons with a PGA qualified professional at a Golf Academy. Once the user has registered an account they will be able to create, read, update and delete their booking at a state of the art driving range. The administrator of the booking site will also have full CRUD capibilities of the booking site.
 
 ## Table of Contents
 
@@ -59,7 +59,6 @@ The goal of this project is to enable registered users to book golf lessons with
     - [Clone](#clone)
     - [Run Locally](#run-locally)
 - [Credits](#credits)
-- [Comments](#comments)
 
 ## UX
 
@@ -617,10 +616,10 @@ Below are a list of features to be implemented in the future:
 - [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview "Lighthouse")
 - [Coolers](https://coolors.co/ "Coolers")
-- [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
 - [Favicon Converter](https://favicon.io/favicon-converter/ "Favicon Converter")
 - [Font Awesome library](https://fontawesome.com/ "Font Awesome")
 - [dbdiagram](https://dbdiagram.io/home/ "dbdiagram")
+- [Squoosh](https://squoosh.app/ "Image converter")
 
 \
 &nbsp;
@@ -1025,11 +1024,11 @@ Lighthouse tests were run on all pages for mobile and desktop, see results below
 
 - Thankfully I didn't encounter any major bugs during development just small issues like pages not rendering correctly an deployed site and locally. This was caused by not running the collect static files command before deployment and by not changing the debug level back to True when working locally.
 
-- The other issues encountered was with Lighthouse testing, the performane and best pratices scores were low. I improved the performance by converting all images to webp format. The best practice score was low due to originally using a google iframe for the map location. I chaged this to the google maps api when improved the score.
+- The other issues encountered was with Lighthouse testing, the performane and best pratice scores were low. I improved the performance by converting all images to webp format. The best practice score was low due to originally using a google iframe for the map location. I chaged this to the google maps api when improved the score.
 
 ### Unfixed Bugs
 
-- There are no bugs with the game that I am aware of.
+- There are no bugs with the website that I am aware of.
 
 \
 &nbsp;
@@ -1069,7 +1068,13 @@ The site was deployed using Heroku following the steps below:
 
 - Scroll down on page and select either **Enable Automatic Deploys** which will rebuild your app every time you push a new change to GitHub or **Deploy Branch** which is a manual deployment so has to be selected after each change pushed to GitHub.
 
-- Once app is built you can click on **Open app** at top of page which will open app on new page where you can copy URL. 
+- Once app is built you can click on **Open app** at top of page which will open app on new page where you can copy URL.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Fork
 
@@ -1109,13 +1114,21 @@ To copy the repository to your local machine in Github follow steps below:
 
 ## Credits
 
-For help and advice:
+My mentor For help and advice:
 
 - [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
 
 Code inspiration:
 
 - [LMS Django Walkthrough Project](https://codeinstitute.net "Developing with Django")
+
+Google maps Api inspiration
+
+- [Google maps Api](https://codeinstitute.net "Google maps api")
+
+Tutorial on Django booking systems
+
+- [Django tutorial](https://www.youtube.com/watch?v=s5xbtuo9pR0 "Django tutorial")
 
 
 \
