@@ -1124,7 +1124,7 @@ Code inspiration:
 
 Google maps Api inspiration
 
-- [Google maps Api](https://codeinstitute.net "Google maps api")
+- [Google maps Api](https://www.youtube.com/watch?v=uPhWSyRqQDA "Google maps api")
 
 Tutorial on Django booking systems
 
